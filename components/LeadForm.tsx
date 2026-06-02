@@ -215,14 +215,14 @@ export function LeadForm({ variant = "buyer", defaultType }: { variant?: Variant
             <label className="label" htmlFor="message">Mesajınız</label>
             <textarea id="message" rows={3} className="input" placeholder={isSeller ? "Konteynerinizin özellikleri, yaşı..." : "Ek notlarınız varsa..."} value={form.message} onChange={(e) => update("message", e.target.value)} />
           </div>
-          <label className="flex items-start gap-2 text-xs text-ink-500">
-            <input type="checkbox" required className="mt-0.5" />
-            <span>Kişisel verilerimin bu talep kapsamında işlenmesini kabul ediyorum.</span>
-          </label>
         </div>
       </div>
 
       <div className="mt-8 flex flex-col gap-4 border-t border-black/5 pt-6">
+        <label className="flex items-start gap-2 text-xs text-ink-500">
+          <input type="checkbox" required className="mt-0.5" />
+          <span>Kişisel verilerimin bu talep kapsamında işlenmesini kabul ediyorum.</span>
+        </label>
         {err && <div className="rounded-lg bg-red-50 px-4 py-3 text-sm text-red-700 font-medium">{err}</div>}
         
         <div className="flex flex-col items-center justify-between gap-4 sm:flex-row">

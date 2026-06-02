@@ -11,12 +11,14 @@ export async function POST(req: Request) {
     if (scriptUrl && scriptUrl !== "BURAYA_URL_GELECEK") {
       const scriptRes = await fetch(scriptUrl, {
         method: "POST",
-        headers: { "Content-Type": "application/json" },
+        // Google Apps Script redirect döner. Next.js'in bunu takip edip takılmasını önlemek için manual yapıyoruz.
+        redirect: "manual", 
         body: JSON.stringify(data),
       });
 
-      if (!scriptRes.ok) {
-        console.error("Apps Script Hatası:", await scriptRes.text());
+      // 302 (Found/Redirect) veya 200 dönerse başarılı sayılır.
+      if (!scriptRes.ok && scriptRes.status !== 302) {
+        console.error("Apps Script Hatası, Status:", scriptRes.status);
         throw new Error("Apps Script'e gönderilemedi");
       }
     } else {
