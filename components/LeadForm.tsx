@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import { CheckCircle2, Loader2 } from "lucide-react";
+import { CheckCircle2, Loader2, ChevronDown } from "lucide-react";
 import { waLink } from "@/lib/whatsapp";
 import { categoryOptions, regionOptions, sizeOptions } from "@/lib/containers";
 
@@ -11,6 +11,9 @@ export function LeadForm({ variant = "buyer", defaultType }: { variant?: Variant
   const [loading, setLoading] = useState(false);
   const [ok, setOk] = useState(false);
   const [err, setErr] = useState<string | null>(null);
+  
+  const [isContactOpen, setIsContactOpen] = useState(false);
+  const [isExtraOpen, setIsExtraOpen] = useState(false);
 
   const isSeller = variant === "seller";
 
@@ -163,10 +166,14 @@ export function LeadForm({ variant = "buyer", defaultType }: { variant?: Variant
 
         {/* 2. İletişim Bilgileri */}
         <div className="pt-6 border-t border-black/5 md:border-t-0 md:pt-2 md:pl-8">
-          <div className="mb-4">
+          <button type="button" onClick={() => setIsContactOpen(!isContactOpen)} className="w-full flex items-center justify-between md:hidden mb-4">
+            <h3 className="text-sm font-bold text-ink-900">İletişim Bilgileri</h3>
+            <ChevronDown className={`h-5 w-5 text-ink-500 transition-transform ${isContactOpen ? "rotate-180" : ""}`} />
+          </button>
+          <div className="hidden md:block mb-4">
             <h3 className="text-sm font-bold text-ink-900">İletişim Bilgileri</h3>
           </div>
-          <div className="grid gap-4">
+          <div className={`gap-4 ${isContactOpen ? "grid" : "hidden"} md:grid`}>
             <div>
               <label className="label" htmlFor="name">Ad Soyad *</label>
               <input id="name" className="input" required placeholder="Adınız Soyadınız" autoComplete="name" value={form.name} onChange={(e) => update("name", e.target.value)} />
@@ -192,10 +199,14 @@ export function LeadForm({ variant = "buyer", defaultType }: { variant?: Variant
 
       {/* 3. Ek Bilgiler */}
       <div className="mt-6 border-t border-black/5 pt-6">
-        <div className="mb-4">
+        <button type="button" onClick={() => setIsExtraOpen(!isExtraOpen)} className="w-full flex items-center justify-between md:hidden mb-4">
+          <h3 className="text-sm font-bold text-ink-900">Ek Bilgiler</h3>
+          <ChevronDown className={`h-5 w-5 text-ink-500 transition-transform ${isExtraOpen ? "rotate-180" : ""}`} />
+        </button>
+        <div className="hidden md:block mb-4">
           <h3 className="text-sm font-bold text-ink-900">Ek Bilgiler</h3>
         </div>
-        <div className="grid gap-4">
+        <div className={`gap-4 ${isExtraOpen ? "grid" : "hidden"} md:grid`}>
           <div>
             <label className="label" htmlFor="message">Mesajınız</label>
             <textarea id="message" rows={3} className="input" placeholder={isSeller ? "Konteynerinizin özellikleri, yaşı..." : "Ek notlarınız varsa..."} value={form.message} onChange={(e) => update("message", e.target.value)} />
