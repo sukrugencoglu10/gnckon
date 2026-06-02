@@ -15,7 +15,7 @@ export function Hero() {
   useEffect(() => {
     const timer = setInterval(() => {
       setCurrentImage((prev) => (prev + 1) % images.length);
-    }, 5000); // 5 saniyede bir değişir
+    }, 12000); // 12 saniyede bir değişir (Çok sık değişmemesi için uzatıldı)
     return () => clearInterval(timer);
   }, []);
 
@@ -28,6 +28,8 @@ export function Hero() {
           src={src}
           alt="Konteyner Arkaplan"
           fill
+          quality={75}
+          sizes="100vw"
           priority={idx === 0}
           className={`object-cover transition-opacity duration-1000 ${
             idx === currentImage ? "opacity-40" : "opacity-0"
