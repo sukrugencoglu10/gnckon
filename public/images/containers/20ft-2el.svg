@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" role="img" aria-label="20 ft Konteyner 2. El">
+  <defs>
+    <linearGradient id="g" x1="0" x2="0" y1="0" y2="1"><stop offset="0" stop-color="#475569"/><stop offset="1" stop-color="#1e293b"/></linearGradient>
+    <linearGradient id="bg" x1="0" x2="0" y1="0" y2="1"><stop offset="0" stop-color="#f8fafc"/><stop offset="1" stop-color="#e2e8f0"/></linearGradient>
+  </defs>
+  <rect width="800" height="600" fill="url(#bg)"/>
+  <ellipse cx="400" cy="500" rx="320" ry="22" fill="#0b1220" opacity=".15"/>
+  <rect x="160" y="200" width="480" height="240" rx="12" fill="url(#g)"/>
+  <g stroke="#fff" stroke-opacity=".22" stroke-width="3">
+    <line x1="190" y1="210" x2="190" y2="430"/><line x1="220" y1="210" x2="220" y2="430"/><line x1="250" y1="210" x2="250" y2="430"/>
+    <line x1="280" y1="210" x2="280" y2="430"/><line x1="310" y1="210" x2="310" y2="430"/><line x1="340" y1="210" x2="340" y2="430"/>
+    <line x1="370" y1="210" x2="370" y2="430"/><line x1="400" y1="210" x2="400" y2="430"/><line x1="430" y1="210" x2="430" y2="430"/>
+    <line x1="460" y1="210" x2="460" y2="430"/><line x1="490" y1="210" x2="490" y2="430"/><line x1="520" y1="210" x2="520" y2="430"/>
+    <line x1="550" y1="210" x2="550" y2="430"/><line x1="580" y1="210" x2="580" y2="430"/><line x1="610" y1="210" x2="610" y2="430"/>
+  </g>
+  <circle cx="245" cy="260" r="14" fill="#7c2d12" opacity=".5"/>
+  <circle cx="520" cy="380" r="10" fill="#7c2d12" opacity=".4"/>
+  <text x="400" y="345" text-anchor="middle" font-family="Inter, sans-serif" font-weight="800" font-size="40" fill="#fff">20 ft · 2. El</text>
+  <rect x="150" y="430" width="500" height="22" rx="4" fill="#0b1220"/>
+</svg>

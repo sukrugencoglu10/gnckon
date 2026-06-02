@@ -1,0 +1,38 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --safe-bottom: env(safe-area-inset-bottom, 0px);
+}
+
+html { scroll-behavior: smooth; }
+body { @apply bg-white text-ink-800 antialiased; }
+
+@layer components {
+  .container-x { @apply mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-8; }
+  .btn { @apply inline-flex items-center justify-center gap-2 rounded-xl px-4 py-2.5 text-sm font-semibold transition focus:outline-none focus-visible:ring-2 focus-visible:ring-offset-2; }
+  .btn-primary { @apply btn bg-brand-600 text-white hover:bg-brand-700 focus-visible:ring-brand-500; }
+  .btn-wa { @apply btn bg-wa text-white hover:bg-wa-dark focus-visible:ring-wa; }
+  .btn-outline { @apply btn border border-ink-700/15 bg-white text-ink-800 hover:border-ink-700/30 hover:bg-ink-700/5; }
+  .btn-ghost { @apply btn text-ink-700 hover:bg-ink-700/5; }
+  .chip { @apply inline-flex items-center gap-1 rounded-full bg-white/10 px-3 py-1 text-xs font-medium ring-1 ring-white/20 backdrop-blur; }
+  .card { @apply rounded-2xl bg-white shadow-card ring-1 ring-black/5; }
+  .input { @apply block w-full rounded-xl border border-ink-700/15 bg-white px-3.5 py-3 text-ink-900 placeholder:text-ink-400 focus:border-brand-500 focus:outline-none focus:ring-2 focus:ring-brand-500/30; }
+  .input:user-invalid,
+  .input:invalid:not(:placeholder-shown):not(:focus) {
+    @apply border-red-500 focus:border-red-500 focus:ring-red-500/30;
+  }
+  select.input {
+    @apply appearance-none bg-no-repeat pr-10;
+    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='20' height='20' viewBox='0 0 24 24' fill='none' stroke='%236b7280' stroke-width='2.25' stroke-linecap='round' stroke-linejoin='round'><polyline points='6 9 12 15 18 9'/></svg>");
+    background-position: right 0.75rem center;
+    background-size: 1.1rem 1.1rem;
+  }
+  .label { @apply mb-1.5 block text-sm font-medium text-ink-700; }
+}
+
+/* Mobil alt CTA çubuğu için içerik altına alan */
+@media (max-width: 767px) {
+  body { padding-bottom: calc(72px + var(--safe-bottom)); }
+}

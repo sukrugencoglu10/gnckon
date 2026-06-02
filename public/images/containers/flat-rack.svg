@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" role="img" aria-label="20 ft Flat Rack Konteyner">
+  <defs>
+    <linearGradient id="g" x1="0" x2="0" y1="0" y2="1"><stop offset="0" stop-color="#facc15"/><stop offset="1" stop-color="#a16207"/></linearGradient>
+    <linearGradient id="end" x1="0" x2="0" y1="0" y2="1"><stop offset="0" stop-color="#eab308"/><stop offset="1" stop-color="#854d0e"/></linearGradient>
+    <linearGradient id="bg" x1="0" x2="0" y1="0" y2="1"><stop offset="0" stop-color="#f8fafc"/><stop offset="1" stop-color="#e2e8f0"/></linearGradient>
+  </defs>
+  <rect width="800" height="600" fill="url(#bg)"/>
+  <ellipse cx="400" cy="500" rx="320" ry="22" fill="#0b1220" opacity=".18"/>
+
+  <!-- Taban platform -->
+  <rect x="120" y="380" width="560" height="70" rx="6" fill="url(#g)" stroke="#713f12" stroke-width="2"/>
+  <g stroke="#713f12" stroke-opacity=".4" stroke-width="2">
+    <line x1="160" y1="380" x2="160" y2="450"/><line x1="200" y1="380" x2="200" y2="450"/>
+    <line x1="240" y1="380" x2="240" y2="450"/><line x1="280" y1="380" x2="280" y2="450"/>
+    <line x1="320" y1="380" x2="320" y2="450"/><line x1="360" y1="380" x2="360" y2="450"/>
+    <line x1="400" y1="380" x2="400" y2="450"/><line x1="440" y1="380" x2="440" y2="450"/>
+    <line x1="480" y1="380" x2="480" y2="450"/><line x1="520" y1="380" x2="520" y2="450"/>
+    <line x1="560" y1="380" x2="560" y2="450"/><line x1="600" y1="380" x2="600" y2="450"/>
+    <line x1="640" y1="380" x2="640" y2="450"/>
+  </g>
+
+  <!-- Sol uç duvar -->
+  <rect x="120" y="200" width="40" height="180" rx="4" fill="url(#end)" stroke="#713f12" stroke-width="2"/>
+  <line x1="140" y1="210" x2="140" y2="375" stroke="#fff" stroke-opacity=".25" stroke-width="3"/>
+  <!-- Sağ uç duvar -->
+  <rect x="640" y="200" width="40" height="180" rx="4" fill="url(#end)" stroke="#713f12" stroke-width="2"/>
+  <line x1="660" y1="210" x2="660" y2="375" stroke="#fff" stroke-opacity=".25" stroke-width="3"/>
+
+  <!-- Köşe kilitleri -->
+  <rect x="115" y="195" width="20" height="14" rx="2" fill="#1f2937"/>
+  <rect x="665" y="195" width="20" height="14" rx="2" fill="#1f2937"/>
+  <rect x="115" y="445" width="20" height="14" rx="2" fill="#1f2937"/>
+  <rect x="665" y="445" width="20" height="14" rx="2" fill="#1f2937"/>
+
+  <!-- Üzerinde yük: çelik boru bobinleri -->
+  <g>
+    <ellipse cx="300" cy="365" rx="60" ry="18" fill="#475569"/>
+    <rect x="240" y="305" width="120" height="60" fill="#64748b"/>
+    <ellipse cx="300" cy="305" rx="60" ry="18" fill="#94a3b8"/>
+    <ellipse cx="300" cy="305" rx="36" ry="11" fill="#1f2937"/>
+  </g>
+  <g>
+    <ellipse cx="490" cy="365" rx="55" ry="16" fill="#475569"/>
+    <rect x="435" y="315" width="110" height="50" fill="#64748b"/>
+    <ellipse cx="490" cy="315" rx="55" ry="16" fill="#94a3b8"/>
+    <ellipse cx="490" cy="315" rx="32" ry="10" fill="#1f2937"/>
+  </g>
+
+  <!-- Etiket -->
+  <text x="400" y="280" text-anchor="middle" font-family="Inter, sans-serif" font-weight="800" font-size="34" fill="#0f172a">FLAT RACK · 20 ft</text>
+
+  <!-- Yer çubuğu -->
+  <rect x="110" y="450" width="580" height="22" rx="4" fill="#0b1220"/>
+</svg>
