@@ -81,14 +81,16 @@ export function LeadForm({ variant = "buyer", defaultType }: { variant?: Variant
       ? "Merhaba, konteynerimi satmak için form gönderdim, detayları paylaşmak istiyorum."
       : "Merhaba, teklif formu doldurdum, fiyat almak istiyorum.";
     return (
-      <div className="card flex flex-col items-center gap-3 p-8 text-center">
-        <CheckCircle2 className="h-12 w-12 text-wa" />
-        <h3 className="text-lg font-bold text-ink-900">Talebiniz alındı</h3>
-        <p className="text-sm text-ink-600">
-          En kısa sürede size dönüş yapacağız. Acil iseniz WhatsApp&apos;tan da ulaşabilirsiniz.
+      <div className="card flex min-h-[500px] flex-col items-center justify-center gap-4 p-8 text-center bg-white shadow-xl ring-1 ring-black/5">
+        <div className="rounded-full bg-green-50 p-5 mb-2">
+          <CheckCircle2 className="h-16 w-16 text-green-500" />
+        </div>
+        <h3 className="text-2xl font-extrabold text-ink-900">Başarılı bir şekilde gönderildi!</h3>
+        <p className="text-base text-ink-600 max-w-md">
+          Talebinizi aldık, en kısa sürede size dönüş yapacağız. Acil durumlar için WhatsApp&apos;tan hemen iletişime geçebilirsiniz.
         </p>
-        <a href={waLink(waMsg)} target="_blank" rel="noopener noreferrer" className="btn-wa mt-2">
-          WhatsApp ile devam et
+        <a href={waLink(waMsg)} target="_blank" rel="noopener noreferrer" className="btn-wa mt-4 px-8 py-3 text-lg shadow-lg shadow-wa/30">
+          WhatsApp ile iletişime geç
         </a>
       </div>
     );
