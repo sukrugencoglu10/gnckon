@@ -22,22 +22,25 @@ export default function TeklifAlPage() {
       </section>
 
       <section className="container-x py-10">
-        <div className="grid gap-8 lg:grid-cols-5">
-          <div className="lg:col-span-3">
-            <LeadForm variant="buyer" />
-          </div>
-          <aside className="lg:col-span-2">
-            <div className="card p-6">
-              <h2 className="text-lg font-bold text-ink-900">Neden bizimle?</h2>
-              <ul className="mt-3 space-y-2 text-sm text-ink-600">
-                <li>• Geniş stok — yeni ve 2. el seçenek</li>
-                <li>• Türkiye geneli TIR ile teslimat</li>
-                <li>• Faturalı, garantili, sertifikalı</li>
-                <li>• Ortalama 5 dakikadan kısa yanıt</li>
-                <li>• Kurumsal müşterilere vadeli ödeme</li>
+        <div className="grid gap-8 lg:grid-cols-1">
+          <aside className="w-full">
+            <div className="card p-6 flex flex-col md:flex-row md:items-center justify-between gap-6 bg-brand-50/50">
+              <div>
+                <h2 className="text-lg font-bold text-ink-900">Neden bizimle çalışmalısınız?</h2>
+                <p className="mt-1 text-sm text-ink-600">Sektördeki tecrübemizle en iyi hizmeti sunuyoruz.</p>
+              </div>
+              <ul className="flex flex-wrap gap-x-6 gap-y-2 text-sm text-ink-700 font-medium">
+                <li className="flex items-center gap-2">✓ Geniş stok</li>
+                <li className="flex items-center gap-2">✓ Türkiye geneli teslimat</li>
+                <li className="flex items-center gap-2">✓ Faturalı & garantili</li>
+                <li className="flex items-center gap-2">✓ 5 dk'da yanıt</li>
               </ul>
             </div>
           </aside>
+          
+          <div className="w-full max-w-4xl mx-auto mt-4 shadow-2xl ring-1 ring-black/5 rounded-2xl">
+            <LeadForm variant="buyer" />
+          </div>
         </div>
       </section>
       <CtaBanner />
