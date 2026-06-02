@@ -1,3 +1,7 @@
+"use client";
+
+import { useState, useEffect } from "react";
+import Image from "next/image";
 import Link from "next/link";
 import { ArrowRight, ShieldCheck, Truck } from "lucide-react";
 import { waLink } from "@/lib/whatsapp";
@@ -5,8 +9,33 @@ import { site } from "@/lib/site-config";
 import { LeadForm } from "@/components/LeadForm";
 
 export function Hero() {
+  const images = ["/hero-1.jpg", "/hero-2.jpg"];
+  const [currentImage, setCurrentImage] = useState(0);
+
+  useEffect(() => {
+    const timer = setInterval(() => {
+      setCurrentImage((prev) => (prev + 1) % images.length);
+    }, 5000); // 5 saniyede bir değişir
+    return () => clearInterval(timer);
+  }, []);
+
   return (
     <section className="relative overflow-hidden bg-ink-900 text-white">
+      {/* Arkaplan Resimleri */}
+      {images.map((src, idx) => (
+        <Image
+          key={src}
+          src={src}
+          alt="Konteyner Arkaplan"
+          fill
+          priority={idx === 0}
+          className={`object-cover transition-opacity duration-1000 ${
+            idx === currentImage ? "opacity-40" : "opacity-0"
+          }`}
+        />
+      ))}
+
+      {/* Gradyanlar (Resmin üzerine renk katmak için) */}
       <div
         aria-hidden
         className="absolute inset-0"
