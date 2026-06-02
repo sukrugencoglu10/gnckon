@@ -5,7 +5,7 @@ export async function POST(req: Request) {
     const data = await req.json();
     
     // .env.local dosyasında tanımlı olan veya sonradan eklenecek olan Apps Script Web App URL'si
-    const scriptUrl = process.env.APPS_SCRIPT_URL || "https://script.google.com/macros/s/AKfycbxPamiXON3_PuL_H6d8c7tDPACrdP3icExwyVgio54g37CL7ThMUMZoqC08zf0wdPg5rA/exec";
+    const scriptUrl = process.env.APPS_SCRIPT_URL || "https://script.google.com/macros/s/AKfycbzLskFSGdVXFK6u6MzDQ5tJrTmpBb5TK5HdfwyDJjHF4DrNhXxOLnNK5kMje1Ffp_6Oow/exec";
 
     // Apps Script'e veriyi yolla
     if (scriptUrl && scriptUrl !== "BURAYA_URL_GELECEK") {
