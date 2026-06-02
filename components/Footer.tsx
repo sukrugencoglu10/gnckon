@@ -14,9 +14,6 @@ export function Footer() {
             </span>
             <span className="font-extrabold tracking-tight">{site.name}</span>
           </div>
-          <p className="mt-3 max-w-md text-sm leading-relaxed">
-            {site.description}
-          </p>
         </div>
 
         <div>
