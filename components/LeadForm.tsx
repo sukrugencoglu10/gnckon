@@ -96,14 +96,14 @@ export function LeadForm({ variant = "buyer", defaultType }: { variant?: Variant
         </div>
       </div>
 
-      <div className="space-y-6 divide-y divide-black/5">
+      <div className="grid gap-6 md:grid-cols-2 md:gap-8 md:divide-x md:divide-black/5">
         {/* 1. Konteyner Bilgileri */}
-        <div className="pt-2 sm:flex sm:gap-8">
-          <div className="mb-4 shrink-0 sm:mb-0 sm:w-1/3">
+        <div className="pt-2">
+          <div className="mb-4">
             <h3 className="text-sm font-bold text-ink-900">Konteyner Bilgileri</h3>
           </div>
-          <div className="grid gap-4 sm:w-2/3 sm:grid-cols-2">
-            <div className="sm:col-span-2">
+          <div className="grid gap-4">
+            <div>
               <label className="label" htmlFor="category">Konteyner Tipi *</label>
               <select
                 id="category"
@@ -140,7 +140,7 @@ export function LeadForm({ variant = "buyer", defaultType }: { variant?: Variant
               <label className="label" htmlFor="quantity">Miktar *</label>
               <input id="quantity" type="number" min={1} max={1000} required className="input" value={form.quantity} onChange={(e) => update("quantity", e.target.value)} />
             </div>
-            <div className="sm:col-span-2">
+            <div>
               <label className="label" htmlFor="region">Alınacak Bölge *</label>
               <select id="region" className="input" required value={form.region} onChange={(e) => update("region", e.target.value)}>
                 <option value="">Seçiniz</option>
@@ -150,7 +150,7 @@ export function LeadForm({ variant = "buyer", defaultType }: { variant?: Variant
               </select>
             </div>
             {isSeller && (
-              <div className="sm:col-span-2">
+              <div>
                 <label className="label" htmlFor="condition">Durum</label>
                 <select id="condition" className="input" value={form.condition} onChange={(e) => update("condition", e.target.value)}>
                   <option value="ikinci-el">2. El</option>
@@ -162,11 +162,11 @@ export function LeadForm({ variant = "buyer", defaultType }: { variant?: Variant
         </div>
 
         {/* 2. İletişim Bilgileri */}
-        <div className="pt-6 sm:flex sm:gap-8">
-          <div className="mb-4 shrink-0 sm:mb-0 sm:w-1/3">
+        <div className="pt-6 border-t border-black/5 md:border-t-0 md:pt-2 md:pl-8">
+          <div className="mb-4">
             <h3 className="text-sm font-bold text-ink-900">İletişim Bilgileri</h3>
           </div>
-          <div className="grid gap-4 sm:w-2/3">
+          <div className="grid gap-4">
             <div>
               <label className="label" htmlFor="name">Ad Soyad *</label>
               <input id="name" className="input" required placeholder="Adınız Soyadınız" autoComplete="name" value={form.name} onChange={(e) => update("name", e.target.value)} />
@@ -188,23 +188,23 @@ export function LeadForm({ variant = "buyer", defaultType }: { variant?: Variant
             </div>
           </div>
         </div>
+      </div>
 
-        {/* 3. Ek Bilgiler */}
-        <div className="pt-6 sm:flex sm:gap-8">
-          <div className="mb-4 shrink-0 sm:mb-0 sm:w-1/3">
-            <h3 className="text-sm font-bold text-ink-900">Ek Bilgiler</h3>
+      {/* 3. Ek Bilgiler */}
+      <div className="mt-6 border-t border-black/5 pt-6">
+        <div className="mb-4">
+          <h3 className="text-sm font-bold text-ink-900">Ek Bilgiler</h3>
+        </div>
+        <div className="grid gap-4">
+          <div>
+            <label className="label" htmlFor="message">Mesajınız</label>
+            <textarea id="message" rows={3} className="input" placeholder={isSeller ? "Konteynerinizin özellikleri, yaşı..." : "Ek notlarınız varsa..."} value={form.message} onChange={(e) => update("message", e.target.value)} />
           </div>
-          <div className="grid gap-4 sm:w-2/3">
-            <div>
-              <label className="label" htmlFor="message">Mesajınız</label>
-              <textarea id="message" rows={3} className="input" placeholder={isSeller ? "Konteynerinizin özellikleri, yaşı..." : "Ek notlarınız varsa..."} value={form.message} onChange={(e) => update("message", e.target.value)} />
-            </div>
-            <label className="flex items-start gap-2 text-xs text-ink-500">
-              <input type="checkbox" required className="mt-0.5" />
-              <span>Kişisel verilerimin bu talep kapsamında işlenmesini kabul ediyorum.</span>
-            </label>
-            {err && <div className="rounded-lg bg-red-50 px-3 py-2 text-sm text-red-700">{err}</div>}
-          </div>
+          <label className="flex items-start gap-2 text-xs text-ink-500">
+            <input type="checkbox" required className="mt-0.5" />
+            <span>Kişisel verilerimin bu talep kapsamında işlenmesini kabul ediyorum.</span>
+          </label>
+          {err && <div className="rounded-lg bg-red-50 px-3 py-2 text-sm text-red-700">{err}</div>}
         </div>
       </div>
 
