@@ -148,13 +148,7 @@ export default function ContainerDetailPage({ params }: { params: { slug: string
           </div>
 
           <aside className="lg:sticky lg:top-24 lg:self-start">
-            <div className="card p-5 md:p-6">
-              <h3 className="text-lg font-bold text-ink-900">Teklif Almak İstiyorum</h3>
-              <p className="mt-1 text-sm text-ink-500">Birkaç saniyede teklif alın.</p>
-              <div className="mt-4">
-                <LeadForm variant="buyer" defaultType={c.type} />
-              </div>
-            </div>
+            <LeadForm variant="buyer" defaultType={c.type} />
           </aside>
         </div>
       </section>

@@ -36,3 +36,11 @@ body { @apply bg-white text-ink-800 antialiased; }
 @media (max-width: 767px) {
   body { padding-bottom: calc(72px + var(--safe-bottom)); }
 }
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateX(12px); }
+  to { opacity: 1; transform: translateX(0); }
+}
+.animate-fadeIn {
+  animation: fadeIn 0.35s ease-out;
+}

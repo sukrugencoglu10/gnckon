@@ -2,6 +2,7 @@ import Link from "next/link";
 import { ArrowRight, ShieldCheck, Truck } from "lucide-react";
 import { waLink } from "@/lib/whatsapp";
 import { site } from "@/lib/site-config";
+import { LeadForm } from "@/components/LeadForm";
 
 export function Hero() {
   return (
@@ -30,7 +31,7 @@ export function Hero() {
             anında fiyat, hızlı teslimat
           </h1>
           <p className="mt-4 max-w-xl text-base text-slate-100/95 sm:text-lg">
-            Yeni ve 2. el 20 ft, 40 ft, High Cube, Reefer (soğutuculu) ve Flat Rack konteynerler.
+            Yeni ve 2. el 20 ft, 40 ft, Open Top, Reefer (soğutuculu) ve Flat Rack konteynerler.
             WhatsApp'tan saniyeler içinde fiyat alın veya konteynerinizi bize satın.
           </p>
 
@@ -65,37 +66,14 @@ export function Hero() {
             <span className="font-medium text-slate-300">Hızlı filtre:</span>
             <Link href="/konteynerler?tip=20ft" className="rounded-full bg-white/10 px-3 py-1 hover:bg-white/15">20 ft</Link>
             <Link href="/konteynerler?tip=40ft" className="rounded-full bg-white/10 px-3 py-1 hover:bg-white/15">40 ft</Link>
-            <Link href="/konteynerler?tip=40ft-hc" className="rounded-full bg-white/10 px-3 py-1 hover:bg-white/15">High Cube</Link>
+            <Link href="/konteynerler?tip=40ft-open-top" className="rounded-full bg-white/10 px-3 py-1 hover:bg-white/15">Open Top</Link>
             <Link href="/konteynerler?tip=20ft-reefer" className="rounded-full bg-white/10 px-3 py-1 hover:bg-white/15">Soğutuculu</Link>
             <Link href="/konteynerler?tip=flat-rack" className="rounded-full bg-white/10 px-3 py-1 hover:bg-white/15">Flat Rack</Link>
           </div>
         </div>
 
-        <div className="relative">
-          <div className="relative mx-auto aspect-[5/4] w-full max-w-lg rounded-2xl bg-gradient-to-br from-brand-500/20 to-brand-700/10 ring-1 ring-white/10">
-            <svg viewBox="0 0 500 400" className="absolute inset-0 h-full w-full p-6" aria-hidden>
-              <defs>
-                <linearGradient id="cBody" x1="0" x2="0" y1="0" y2="1">
-                  <stop offset="0" stopColor="#ea580c" />
-                  <stop offset="1" stopColor="#9a3412" />
-                </linearGradient>
-              </defs>
-              <rect x="40" y="120" width="420" height="180" rx="10" fill="url(#cBody)" />
-              {Array.from({ length: 18 }).map((_, i) => (
-                <line key={i} x1={60 + i * 22} y1="130" x2={60 + i * 22} y2="290" stroke="#fff" strokeOpacity=".18" strokeWidth="2" />
-              ))}
-              <rect x="50" y="130" width="40" height="160" rx="3" fill="#fff" fillOpacity=".08" />
-              <rect x="410" y="130" width="40" height="160" rx="3" fill="#fff" fillOpacity=".08" />
-              <text x="250" y="225" textAnchor="middle" fontFamily="Inter, sans-serif" fontWeight="800" fontSize="34" fill="#fff" opacity=".95">
-                40 ft HC
-              </text>
-              <rect x="20" y="300" width="460" height="14" rx="3" fill="#0b1220" />
-            </svg>
-          </div>
-          <div className="absolute -bottom-4 left-1/2 -translate-x-1/2 rounded-xl bg-white px-4 py-2 text-center text-ink-900 shadow-card ring-1 ring-black/5">
-            <div className="text-[10px] font-semibold uppercase tracking-wide text-ink-500">Ortalama Yanıt</div>
-            <div className="text-sm font-bold">⚡ 5 dakikadan kısa</div>
-          </div>
+        <div className="relative mx-auto w-full max-w-md lg:max-w-lg shadow-2xl ring-1 ring-black/5 rounded-2xl">
+          <LeadForm variant="buyer" />
         </div>
       </div>
     </section>

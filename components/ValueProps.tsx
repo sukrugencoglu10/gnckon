@@ -26,15 +26,6 @@ const items = [
 export function ValueProps() {
   return (
     <section className="container-x py-14 md:py-20">
-      <div className="mx-auto max-w-2xl text-center">
-        <h2 className="text-2xl font-extrabold tracking-tight text-ink-900 sm:text-3xl">
-          Tek noktadan konteyner çözümleri
-        </h2>
-        <p className="mt-3 text-ink-500">
-          Alın, satın, kiralayın veya size özel modifiye ettirin — tek firma, hızlı süreç.
-        </p>
-      </div>
-
       <div className="mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
         {items.map(({ Icon, title, desc }) => (
           <div key={title} className="card p-6">

@@ -4,7 +4,10 @@ export type ContainerType =
   | "40ft-hc"
   | "20ft-reefer"
   | "40ft-reefer"
-  | "flat-rack";
+  | "20ft-flat-rack"
+  | "40ft-flat-rack"
+  | "20ft-open-top"
+  | "40ft-open-top";
 
 export type ContainerCondition = "yeni" | "ikinci-el";
 
@@ -38,7 +41,7 @@ export const containers: Container[] = [
     city: "İstanbul",
     shortDesc: "Sıfır, ISO standartlarında, kuru yük taşımacılığı için ideal.",
     description:
-      "Sıfır üretim 20 ft standart kuru yük konteyneri. ISO 668 standartlarında, CSC sertifikalı, su geçirmez kontrplak tabanlı. Kara, deniz ve depo amaçlı kullanıma uygun.",
+      "Sıfır 20 ft standart kuru yük konteyneri. ISO 668 standartlarında, CSC sertifikalı, su geçirmez kontrplak tabanlı. Kara, deniz ve depo amaçlı kullanıma uygun.",
     image: img("20ft-standart.svg"),
     specs: {
       "Dış Boyut": "6.06 × 2.44 × 2.59 m",
@@ -61,7 +64,7 @@ export const containers: Container[] = [
     city: "İzmir",
     shortDesc: "Bakımlı 2. el, depo ve şantiye için ekonomik çözüm.",
     description:
-      "Wind & Watertight (WWT) 2. el 20 ft konteyner. Yapısal olarak sağlam, kontrol edilmiş ve teslim öncesi temizlenmiş.",
+      "2. El 20 ft konteyner. Wind & Watertight (WWT) sertifikalı, yapısal olarak sağlam, kontrol edilmiş ve teslim öncesi temizlenmiş.",
     image: img("20ft-2el.svg"),
     specs: {
       "Dış Boyut": "6.06 × 2.44 × 2.59 m",
@@ -83,7 +86,7 @@ export const containers: Container[] = [
     city: "İstanbul",
     shortDesc: "Büyük hacimli yükler için, ihracat-ithalat uyumlu.",
     description:
-      "40 ft standart kuru yük konteyneri. Geniş hacmiyle uzun ürünler, mobilya ve genel kargo için en uygun çözüm.",
+      "Sıfır 40 ft standart kuru yük konteyneri. Geniş hacmiyle uzun ürünler, mobilya ve genel kargo için en uygun çözüm.",
     image: img("40ft-standart.svg"),
     specs: {
       "Dış Boyut": "12.19 × 2.44 × 2.59 m",
@@ -95,23 +98,24 @@ export const containers: Container[] = [
     featured: true,
   },
   {
-    slug: "40-ft-high-cube-konteyner",
-    title: "40 ft High Cube (HC) Konteyner",
-    type: "40ft-hc",
-    typeLabel: "40 ft High Cube",
+    slug: "40-ft-open-top-konteyner",
+    title: "40 ft Open Top Konteyner",
+    type: "40ft-open-top",
+    typeLabel: "40 ft Open Top",
     condition: "yeni",
     sizeFt: 40,
-    priceTRY: 255000,
+    priceTRY: 310000,
     city: "İstanbul",
-    shortDesc: "Standartın 30 cm yükseği — hacimli yük taşıma şampiyonu.",
+    shortDesc: "Üstten yükleme gerektiren makine vb. yükler için branda kapaklı.",
     description:
-      "40 ft High Cube konteyner, standart 40 ft'e göre 30 cm daha yüksektir. Hafif ama hacimli yükler için ideal.",
-    image: img("40ft-hc.svg"),
+      "Sıfır 40 ft Open Top konteyner, tavanı tamamen açılabilen ve branda (tarp) ile örtülen yapısıyla, vinç yardımıyla üstten yüklenmesi gereken ağır sanayi yükleri için idealdir.",
+    image: img("40ft-open-top.svg"),
     specs: {
-      "Dış Boyut": "12.19 × 2.44 × 2.89 m",
-      "İç Hacim": "76.4 m³",
-      "Boş Ağırlık": "3.900 kg",
-      "Yük Kapasitesi": "28.600 kg",
+      "Dış Boyut": "12.19 × 2.44 × 2.59 m",
+      "İç Hacim": "66.5 m³",
+      "Boş Ağırlık": "3.850 kg",
+      "Çatı Tipi": "Çıkarılabilir Profil + Branda",
+      "Yük Kapasitesi": "26.630 kg",
     },
     featured: true,
   },
@@ -126,7 +130,7 @@ export const containers: Container[] = [
     city: "Mersin",
     shortDesc: "-25°C / +25°C arası, Carrier/Thermo King ünite seçenekli.",
     description:
-      "20 ft reefer (soğutuculu) konteyner. Gıda, ilaç ve hassas yüklerin nakliyesi ve depolanması için uygundur.",
+      "Sıfır 20 ft reefer (soğutuculu) konteyner. Gıda, ilaç ve hassas yüklerin nakliyesi ve depolanması için uygundur.",
     image: img("20ft-reefer.svg"),
     specs: {
       "Sıcaklık Aralığı": "-25°C ÷ +25°C",
@@ -147,7 +151,7 @@ export const containers: Container[] = [
     city: "İzmir",
     shortDesc: "Büyük hacimli soğuk zincir lojistiği için.",
     description:
-      "40 ft reefer konteyner. Et, balık, taze sebze-meyve ihracatı ve büyük ölçekli soğuk depo uygulamaları için.",
+      "Sıfır 40 ft reefer konteyner. Et, balık, taze sebze-meyve ihracatı ve büyük ölçekli soğuk depo uygulamaları için.",
     image: img("40ft-reefer.svg"),
     specs: {
       "Sıcaklık Aralığı": "-30°C ÷ +30°C",
@@ -159,15 +163,15 @@ export const containers: Container[] = [
   {
     slug: "20-ft-flat-rack-konteyner",
     title: "20 ft Flat Rack Konteyner",
-    type: "flat-rack",
-    typeLabel: "Flat Rack",
+    type: "20ft-flat-rack",
+    typeLabel: "20 ft Flat Rack",
     condition: "yeni",
     sizeFt: 20,
     priceTRY: 215000,
     city: "Mersin",
     shortDesc: "Ağır ve gabari dışı yükler için açık platform konteyner.",
     description:
-      "20 ft flat rack (açık platform) konteyner. İş makineleri, çelik konstrüksiyon, boru, bobin ve büyük makine parçalarının taşınması için tasarlanmıştır. Yan duvarlar yoktur; uç duvarlar katlanabilir tiptedir.",
+      "Sıfır 20 ft flat rack (açık platform) konteyner. İş makineleri, çelik konstrüksiyon, boru, bobin ve büyük makine parçalarının taşınması için tasarlanmıştır. Yan duvarlar yoktur; uç duvarlar katlanabilir tiptedir.",
     image: img("flat-rack.svg"),
     specs: {
       "Dış Boyut": "6.06 × 2.44 × 2.59 m",
@@ -190,7 +194,7 @@ export const containers: Container[] = [
     city: "Kocaeli",
     shortDesc: "Bakımlı 2. el 40 ft, depo amaçlı ideal.",
     description:
-      "Cargo Worthy (CW) 2. el 40 ft konteyner. Yapısal ve estetik olarak iyi durumda, depo ve şantiye için uygun fiyatlı çözüm.",
+      "2. El 40 ft konteyner. Cargo Worthy (CW) kondisyonunda, yapısal ve estetik olarak iyi durumda, depo ve şantiye için uygun fiyatlı çözüm.",
     image: img("40ft-2el.svg"),
     specs: {
       "Dış Boyut": "12.19 × 2.44 × 2.59 m",
@@ -207,7 +211,37 @@ export const typeOptions: { value: ContainerType | "all"; label: string }[] = [
   { value: "40ft-hc", label: "40 ft High Cube" },
   { value: "20ft-reefer", label: "20 ft Reefer" },
   { value: "40ft-reefer", label: "40 ft Reefer" },
-  { value: "flat-rack", label: "Flat Rack" },
+  { value: "20ft-flat-rack", label: "20 ft Flat Rack" },
+  { value: "40ft-flat-rack", label: "40 ft Flat Rack" },
+  { value: "20ft-open-top", label: "20 ft Open Top" },
+  { value: "40ft-open-top", label: "40 ft Open Top" },
+];
+
+export const sizeOptions = [
+  { value: "20ft", label: "20 ft" },
+  { value: "40ft", label: "40 ft" },
+  { value: "40ft-hc", label: "40 ft High Cube" },
+];
+
+export const categoryOptions = [
+  { value: "standard_cargo", label: "Standart Yük Konteyneri" },
+  { value: "refrigerated", label: "Reefer Konteyneri" },
+  { value: "flat_rack", label: "Flat Rack Konteyneri" },
+  { value: "open_top", label: "Open Top Konteyneri" },
+  { value: "custom", label: "Özel Üretim" },
+];
+
+export const regionOptions = [
+  { value: "istanbul_avrupa", label: "İstanbul (Avrupa)" },
+  { value: "istanbul_anadolu", label: "İstanbul (Anadolu)" },
+  { value: "kocaeli_gebze", label: "Kocaeli (Gebze)" },
+  { value: "izmir_aliaga", label: "İzmir (Aliağa)" },
+  { value: "mersin", label: "Mersin" },
+  { value: "gemlik", label: "Bursa (Gemlik)" },
+  { value: "iskenderun", label: "İskenderun" },
+  { value: "samsun", label: "Samsun" },
+  { value: "antalya", label: "Antalya" },
+  { value: "diger", label: "Diğer / Belirtilmemiş" },
 ];
 
 export function getContainer(slug: string): Container | undefined {
