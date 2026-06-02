@@ -41,7 +41,10 @@ export function LeadForm({ variant = "buyer", defaultType }: { variant?: Variant
 
   async function onSubmit(e: React.FormEvent<HTMLFormElement>) {
     e.preventDefault();
-    if (!canSubmit()) return;
+    if (!canSubmit()) {
+      setErr("Lütfen tüm zorunlu (*) alanları doldurun ve telefon numaranızı eksiksiz (10 hane) girin.");
+      return;
+    }
     setLoading(true);
     setErr(null);
     const payload: Record<string, string> = {
@@ -198,7 +201,7 @@ export function LeadForm({ variant = "buyer", defaultType }: { variant?: Variant
         </div>
       </div>
 
-      {/* 3. Ek Bilgiler */}
+      {/* 3. Açıklama Ekle */}
       <div className="mt-6 border-t border-black/5 pt-6">
         <button type="button" onClick={() => setIsExtraOpen(!isExtraOpen)} className="w-full flex items-center justify-between md:hidden mb-4">
           <h3 className="text-sm font-bold text-ink-900">Açıklama Ekle</h3>
@@ -216,18 +219,21 @@ export function LeadForm({ variant = "buyer", defaultType }: { variant?: Variant
             <input type="checkbox" required className="mt-0.5" />
             <span>Kişisel verilerimin bu talep kapsamında işlenmesini kabul ediyorum.</span>
           </label>
-          {err && <div className="rounded-lg bg-red-50 px-3 py-2 text-sm text-red-700">{err}</div>}
         </div>
       </div>
 
-      <div className="mt-8 flex flex-col items-center justify-between gap-4 border-t border-black/5 pt-6 sm:flex-row">
-        <p className="text-xs text-ink-400 text-center sm:text-left">
-          Veya doğrudan <a className="font-semibold text-wa hover:underline" href={waLink()} target="_blank" rel="noopener noreferrer">WhatsApp</a> üzerinden yazın.
-        </p>
-        <button type="submit" disabled={loading || !canSubmit()} className="btn-primary w-full sm:w-auto sm:px-8">
-          {loading ? <Loader2 className="h-4 w-4 animate-spin" /> : null}
-          Gönder
-        </button>
+      <div className="mt-8 flex flex-col gap-4 border-t border-black/5 pt-6">
+        {err && <div className="rounded-lg bg-red-50 px-4 py-3 text-sm text-red-700 font-medium">{err}</div>}
+        
+        <div className="flex flex-col items-center justify-between gap-4 sm:flex-row">
+          <p className="text-xs text-ink-400 text-center sm:text-left">
+            Veya doğrudan <a className="font-semibold text-wa hover:underline" href={waLink()} target="_blank" rel="noopener noreferrer">WhatsApp</a> üzerinden yazın.
+          </p>
+          <button type="submit" disabled={loading} className="btn-primary w-full sm:w-auto sm:px-10">
+            {loading ? <Loader2 className="h-4 w-4 animate-spin" /> : null}
+            Gönder
+          </button>
+        </div>
       </div>
     </form>
   );
