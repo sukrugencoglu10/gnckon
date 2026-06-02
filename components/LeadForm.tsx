@@ -35,7 +35,8 @@ export function LeadForm({ variant = "buyer", defaultType }: { variant?: Variant
   }
 
   function canSubmit(): boolean {
-    return !!form.name && !!form.phone && form.phone.replace(/\D/g, "").length === 10;
+    const isPhoneValid = !!form.phone && form.phone.replace(/\D/g, "").length === 10;
+    return !!form.category && !!form.quantity && !!form.region && !!form.name && isPhoneValid;
   }
 
   async function onSubmit(e: React.FormEvent<HTMLFormElement>) {
