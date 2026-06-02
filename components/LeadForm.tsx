@@ -200,11 +200,11 @@ export function LeadForm({ variant = "buyer", defaultType }: { variant?: Variant
       {/* 3. Ek Bilgiler */}
       <div className="mt-6 border-t border-black/5 pt-6">
         <button type="button" onClick={() => setIsExtraOpen(!isExtraOpen)} className="w-full flex items-center justify-between md:hidden mb-4">
-          <h3 className="text-sm font-bold text-ink-900">Ek Bilgiler</h3>
+          <h3 className="text-sm font-bold text-ink-900">Açıklama Ekle</h3>
           <ChevronDown className={`h-5 w-5 text-ink-500 transition-transform ${isExtraOpen ? "rotate-180" : ""}`} />
         </button>
         <div className="hidden md:block mb-4">
-          <h3 className="text-sm font-bold text-ink-900">Ek Bilgiler</h3>
+          <h3 className="text-sm font-bold text-ink-900">Açıklama Ekle</h3>
         </div>
         <div className={`gap-4 ${isExtraOpen ? "grid" : "hidden"} md:grid`}>
           <div>
