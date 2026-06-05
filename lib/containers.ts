@@ -25,6 +25,7 @@ export interface Container {
   image: string; // /images/containers/...
   specs: Record<string, string>;
   featured?: boolean;
+  deliveryStatus?: "Hemen Teslim" | "Siparişe Özel";
 }
 
 const img = (n: string) => `/images/containers/${n}`;
@@ -118,6 +119,7 @@ export const containers: Container[] = [
       "Yük Kapasitesi": "26.630 kg",
     },
     featured: true,
+    deliveryStatus: "Siparişe Özel",
   },
   {
     slug: "20-ft-reefer-sogutuculu-konteyner",

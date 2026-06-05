@@ -1,10 +1,10 @@
 import { BadgeCheck, Clock, ShieldCheck, Truck } from "lucide-react";
 
 const items = [
-  { Icon: ShieldCheck, title: "Garantili Ürün", desc: "Tüm konteynerler kontrol edilmiş, belgeli." },
-  { Icon: Truck, title: "Türkiye Geneli", desc: "TIR ile 81 il, kapıya teslim." },
-  { Icon: Clock, title: "Hızlı Yanıt", desc: "WhatsApp üzerinden ortalama 5 dk." },
-  { Icon: BadgeCheck, title: "Faturalı Satış", desc: "Resmi fatura, kurumsal teslim." },
+  { Icon: ShieldCheck, title: "Uluslararası Standartlar", desc: "ISO ve CSC belgeli, taşımacılığa uygun konteynerler." },
+  { Icon: Truck, title: "Aynı Gün Sevkiyat", desc: "Stoktan anında yükleme, 81 ile güvenilir nakliye." },
+  { Icon: Clock, title: "Anında Teklif & Destek", desc: "WhatsApp üzerinden dakikalar içinde net fiyat garantisi." },
+  { Icon: BadgeCheck, title: "Güvenilir & Faturalı", desc: "Tamamı kurumsal faturalı, şeffaf B2B ticareti." },
 ];
 
 export function TrustStrip() {

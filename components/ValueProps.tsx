@@ -1,25 +1,25 @@
-import { Boxes, HandCoins, Snowflake, Wrench } from "lucide-react";
+import { Boxes, Search, Droplets, Wrench } from "lucide-react";
 
 const items = [
   {
     Icon: Boxes,
-    title: "Geniş Stok",
-    desc: "20 ft, 40 ft, High Cube, Reefer ve Flat Rack konteynerler her zaman hazır.",
+    title: "Tüm İhtiyaçlara Uygun Stok",
+    desc: "20ft'ten 40ft High Cube'a kadar her ebatta ürün anında teslime hazır.",
   },
   {
-    Icon: HandCoins,
-    title: "Alım & Satım",
-    desc: "Konteynerinizi satın alıyoruz ya da komisyonla satışına aracılık ediyoruz.",
+    Icon: Search,
+    title: "Yerinde İnceleme İmkanı",
+    desc: "Satın alacağınız konteyneri bizzat depolarımızda görerek, seçerek alma rahatlığı.",
   },
   {
-    Icon: Snowflake,
-    title: "Soğutuculu Çözümler",
-    desc: "Carrier / Thermo King üniteli reefer konteynerler.",
+    Icon: Droplets,
+    title: "Su ve Hava Geçirmez (WWT)",
+    desc: "Wind & Watertight sertifikalı; yükleriniz neme, yağmura ve toza karşı %100 güvende.",
   },
   {
     Icon: Wrench,
-    title: "Modifikasyon",
-    desc: "Açık platform flat rack, open top ve özel ölçü modifikasyon hizmetleri.",
+    title: "Siparişe Özel Çözümler",
+    desc: "Reefer, Flat Rack veya özel kapı/pencere modifikasyonlarıyla tam aradığınız yapı.",
   },
 ];
 
