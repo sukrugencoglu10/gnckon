@@ -1,5 +1,5 @@
 import { notFound } from "next/navigation";
-import Image from "next/image";
+import { ContainerIllustration } from "@/components/ContainerIllustration";
 import Link from "next/link";
 import { MapPin, Phone } from "lucide-react";
 import {
@@ -22,9 +22,11 @@ export function generateStaticParams() {
 export function generateMetadata({ params }: { params: { slug: string } }) {
   const c = getContainer(params.slug);
   if (!c) return buildMetadata({ title: "Konteyner bulunamadı" });
+  
+  const durumText = c.condition === "yeni" ? "Sıfır" : "İkinci El";
   return buildMetadata({
-    title: `${c.title} — Fiyat İçin WhatsApp`,
-    description: `${c.shortDesc} ${c.typeLabel}, ${c.city}. ${site.name} ile anında fiyat ve teslimat.`,
+    title: `Satılık ${durumText} ${c.typeLabel} | ${site.name}`,
+    description: `Güvenilir ve teslime hazır ${durumText.toLowerCase()} ${c.typeLabel} konteyner modelleri en uygun fiyatlarla ${site.name}'da. Teknik detaylar ve teklif almak için tıklayın.`,
     path: `/konteynerler/${c.slug}`,
     image: c.image,
   });
@@ -46,6 +48,8 @@ export default function ContainerDetailPage({ params }: { params: { slug: string
     offers: {
       "@type": "Offer",
       availability: "https://schema.org/InStock",
+      priceCurrency: "TRY",
+      price: c.priceTRY,
       url: `${site.url}/konteynerler/${c.slug}`,
       seller: { "@type": "Organization", name: site.legalName },
     },
@@ -74,13 +78,9 @@ export default function ContainerDetailPage({ params }: { params: { slug: string
         <div className="grid gap-8 lg:grid-cols-12 items-start">
           <div className="lg:col-span-5">
             <div className="relative aspect-[4/3] overflow-hidden rounded-2xl bg-ink-700/5 ring-1 ring-black/5">
-              <Image
-                src={c.image}
-                alt={c.title}
-                fill
-                priority
-                sizes="(max-width: 1024px) 100vw, 40vw"
-                className="object-cover"
+              <ContainerIllustration
+                image={c.image}
+                className="h-full w-full object-cover"
               />
               <span className="absolute left-4 top-4 rounded-full bg-white/95 px-3 py-1 text-xs font-semibold uppercase text-ink-800 ring-1 ring-black/5">
                 {c.condition === "yeni" ? "Yeni" : "2. El"}

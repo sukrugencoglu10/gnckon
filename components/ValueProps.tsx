@@ -14,7 +14,7 @@ const items = [
   {
     Icon: Snowflake,
     title: "Soğutuculu Çözümler",
-    desc: "Carrier / Thermo King üniteli reefer konteynerler, kiralık seçenekle.",
+    desc: "Carrier / Thermo King üniteli reefer konteynerler.",
   },
   {
     Icon: Wrench,
@@ -31,7 +31,7 @@ export function ValueProps() {
           KONTEYNER ÇÖZÜMLERİ
         </h2>
         <p className="mt-4 text-ink-500 text-lg max-w-2xl mx-auto">
-          İhtiyacınıza uygun tüm konteyner alım, satım ve kiralama süreçlerinde yanınızdayız.
+          İhtiyacınıza uygun tüm konteyner alım ve satım süreçlerinde yanınızdayız.
         </p>
       </div>
       <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">

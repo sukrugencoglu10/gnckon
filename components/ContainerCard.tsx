@@ -1,5 +1,5 @@
 import Link from "next/link";
-import Image from "next/image";
+import { ContainerIllustration } from "@/components/ContainerIllustration";
 import { ArrowRight, MapPin } from "lucide-react";
 import { type Container } from "@/lib/containers";
 import { waForContainer } from "@/lib/whatsapp";
@@ -8,12 +8,9 @@ export function ContainerCard({ c }: { c: Container }) {
   return (
     <article className="card group flex flex-col overflow-hidden">
       <Link href={`/konteynerler/${c.slug}`} className="relative block aspect-[4/3] overflow-hidden bg-ink-700/5">
-        <Image
-          src={c.image}
-          alt={c.title}
-          fill
-          sizes="(max-width: 768px) 100vw, (max-width: 1280px) 33vw, 25vw"
-          className="object-cover transition group-hover:scale-[1.02]"
+        <ContainerIllustration
+          image={c.image}
+          className="h-full w-full object-cover transition group-hover:scale-[1.02]"
         />
         <span className="absolute left-3 top-3 rounded-full bg-white/95 px-2.5 py-1 text-[11px] font-semibold uppercase text-ink-800 ring-1 ring-black/5">
           {c.condition === "yeni" ? "Yeni" : "2. El"}
