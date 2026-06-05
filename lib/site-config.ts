@@ -25,7 +25,6 @@ export const site = {
 export const nav = [
   { href: "/", label: "Anasayfa" },
   { href: "/konteynerler", label: "Konteynerler" },
-  { href: "/teklif-al", label: "Teklif Al" },
   { href: "/konteynerimi-sat", label: "Konteynerimi Sat" },
   { href: "/hakkimizda", label: "Hakkımızda" },
   { href: "/iletisim", label: "İletişim" },

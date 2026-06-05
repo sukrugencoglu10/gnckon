@@ -6,6 +6,7 @@ import { ValueProps } from "@/components/ValueProps";
 import { ContainerCard } from "@/components/ContainerCard";
 import { FAQ } from "@/components/FAQ";
 import { CtaBanner } from "@/components/CtaBanner";
+import { WarehouseMap } from "@/components/WarehouseMap";
 import { featuredContainers } from "@/lib/containers";
 import { buildMetadata } from "@/lib/seo";
 import { site } from "@/lib/site-config";
@@ -22,6 +23,7 @@ export default function HomePage() {
   return (
     <>
       <Hero />
+      <WarehouseMap />
       <TrustStrip />
       <ValueProps />
 
