@@ -33,15 +33,12 @@ export default function HakkimizdaPage() {
               Geniş tedarik ağımız ve güçlü stok altyapımız sayesinde; liman çıkışlı sıfır (one-way) konteynerlerden, uluslararası taşımacılık standartlarına uygun (CSC sertifikalı) bakımlı ikinci el ürünlere; hassas iklimlendirme gerektiren soğutuculu (reefer) ünitelerden, ağır ve gabari dışı lojistik operasyonlarının vazgeçilmezi olan flat rack ve open top çözümlerine kadar çok geniş bir ürün yelpazesiyle hizmet sunuyoruz.
             </p>
             
-            <h2>Değerlerimiz ve Taahhüdümüz</h2>
             <p>
               Sektördeki varlığımızı ve müşteri sadakatimizi üç temel ilke üzerine inşa ettik: <b>Şeffaflık</b>, <b>Operasyonel Hız</b> ve <b>Koşulsuz Güven</b>.
             </p>
             <p>
               GNCKON çatısı altında gerçekleştirdiğimiz tüm ticari süreçler tam şeffaflık ilkesiyle yürütülür; tüm ürünlerimiz kalite kontrol testlerinden geçirilerek, sertifikalı ve resmi faturalı olarak teslim edilir. Amacımız, müşterilerimizin tedarik süreçlerindeki riskleri sıfıra indirerek operasyonel verimliliklerine katkıda bulunmaktır.
             </p>
-
-            <h2>Neden {site.name}?</h2>
             <p>
               <b>Uluslararası Standartlar, Sertifikalı Güvence:</b> Ticari operasyonlarınızın aksamaması için tedarik ettiğimiz her konteyner, uluslararası taşımacılık kurallarına ve sızdırmazlık standartlarına tam uyum garantisi taşır. Sektördeki tecrübemiz ve güçlü finansal yapımızla, projelerinizin en güvenilir halkası olmak için çalışıyoruz.
             </p>
