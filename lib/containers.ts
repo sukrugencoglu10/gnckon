@@ -76,7 +76,6 @@ export const containers: Container[] = [
       Boya: "Yenilenebilir",
       Sertifika: "Yapısal Kontrol Belgesi",
     },
-    featured: true,
   },
   {
     slug: "40-ft-standart-konteyner",
