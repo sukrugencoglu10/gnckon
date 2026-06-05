@@ -168,10 +168,10 @@ export function Svg40ftOpenTopIcon(props: React.SVGProps<SVGSVGElement>) {
     <line x1="650" y1="190" x2="650" y2="450"/><line x1="680" y1="190" x2="680" y2="450"/>
   </g>
   
-  <!-- Tarp Top -->
+  {/**/}
   <path d="M 75 205 Q 400 170 725 205 L 715 215 L 85 215 Z" fill="url(#tarp)" />
   <rect x="75" y="200" width="650" height="15" rx="4" fill="url(#tarp)"/>
-  <!-- Tarp ropes/ties -->
+  {/**/}
   <g stroke="#64748b" strokeWidth="2">
     <line x1="120" y1="210" x2="120" y2="225"/><line x1="180" y1="210" x2="180" y2="225"/>
     <line x1="240" y1="210" x2="240" y2="225"/><line x1="300" y1="210" x2="300" y2="225"/>
@@ -263,7 +263,7 @@ export function FlatRackIcon(props: React.SVGProps<SVGSVGElement>) {
   <rect width="800" height="600" fill="url(#bg)"/>
   <ellipse cx="400" cy="500" rx="320" ry="22" fill="#0b1220" opacity=".18"/>
 
-  <!-- Taban platform -->
+  {/**/}
   <rect x="120" y="380" width="560" height="70" rx="6" fill="url(#g)" stroke="#713f12" strokeWidth="2"/>
   <g stroke="#713f12" strokeOpacity=".4" strokeWidth="2">
     <line x1="160" y1="380" x2="160" y2="450"/><line x1="200" y1="380" x2="200" y2="450"/>
@@ -275,20 +275,20 @@ export function FlatRackIcon(props: React.SVGProps<SVGSVGElement>) {
     <line x1="640" y1="380" x2="640" y2="450"/>
   </g>
 
-  <!-- Sol uç duvar -->
+  {/**/}
   <rect x="120" y="200" width="40" height="180" rx="4" fill="url(#end)" stroke="#713f12" strokeWidth="2"/>
   <line x1="140" y1="210" x2="140" y2="375" stroke="#fff" strokeOpacity=".25" strokeWidth="3"/>
-  <!-- Sağ uç duvar -->
+  {/**/}
   <rect x="640" y="200" width="40" height="180" rx="4" fill="url(#end)" stroke="#713f12" strokeWidth="2"/>
   <line x1="660" y1="210" x2="660" y2="375" stroke="#fff" strokeOpacity=".25" strokeWidth="3"/>
 
-  <!-- Köşe kilitleri -->
+  {/**/}
   <rect x="115" y="195" width="20" height="14" rx="2" fill="#1f2937"/>
   <rect x="665" y="195" width="20" height="14" rx="2" fill="#1f2937"/>
   <rect x="115" y="445" width="20" height="14" rx="2" fill="#1f2937"/>
   <rect x="665" y="445" width="20" height="14" rx="2" fill="#1f2937"/>
 
-  <!-- Üzerinde yük: çelik boru bobinleri -->
+  {/**/}
   <g>
     <ellipse cx="300" cy="365" rx="60" ry="18" fill="#475569"/>
     <rect x="240" y="305" width="120" height="60" fill="#64748b"/>
@@ -302,10 +302,10 @@ export function FlatRackIcon(props: React.SVGProps<SVGSVGElement>) {
     <ellipse cx="490" cy="315" rx="32" ry="10" fill="#1f2937"/>
   </g>
 
-  <!-- Etiket -->
+  {/**/}
   <text x="400" y="280" textAnchor="middle" fontFamily="Inter, sans-serif" fontWeight="800" fontSize="34" fill="#0f172a">FLAT RACK · 20 ft</text>
 
-  <!-- Yer çubuğu -->
+  {/**/}
   <rect x="110" y="450" width="580" height="22" rx="4" fill="#0b1220"/>
 
     </svg>
