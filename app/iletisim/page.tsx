@@ -1,5 +1,5 @@
 import { Clock, Mail, MapPin, Phone } from "lucide-react";
-import { telLink, waLink } from "@/lib/whatsapp";
+import { telLink } from "@/lib/whatsapp";
 import { site } from "@/lib/site-config";
 import { buildMetadata } from "@/lib/seo";
 
@@ -20,16 +20,11 @@ export default function IletisimPage() {
       </section>
 
       <section className="container-x py-10">
-        <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-4">
+        <div className="grid gap-6 md:grid-cols-3">
           <a href={telLink()} className="card flex flex-col gap-2 p-5 hover:shadow-lg">
             <Phone className="h-6 w-6 text-brand-600" />
             <div className="text-xs uppercase text-ink-500">Telefon</div>
             <div className="font-bold text-ink-900">{site.phone}</div>
-          </a>
-          <a href={waLink()} target="_blank" rel="noopener noreferrer" className="card flex flex-col gap-2 p-5 hover:shadow-lg">
-            <span className="text-2xl">💬</span>
-            <div className="text-xs uppercase text-ink-500">WhatsApp</div>
-            <div className="font-bold text-wa">Hemen Yaz</div>
           </a>
           <a href={`mailto:${site.email}`} className="card flex flex-col gap-2 p-5 hover:shadow-lg">
             <Mail className="h-6 w-6 text-brand-600" />

@@ -39,9 +39,12 @@ export function Header() {
                       <Link href="/konteynerler?tip=20ft" className="rounded-md px-3 py-2 text-sm font-medium text-ink-700 hover:bg-ink-50 hover:text-brand-600 transition-colors">20 ft Standart</Link>
                       <Link href="/konteynerler?tip=40ft" className="rounded-md px-3 py-2 text-sm font-medium text-ink-700 hover:bg-ink-50 hover:text-brand-600 transition-colors">40 ft Standart</Link>
                       <Link href="/konteynerler?tip=40ft-hc" className="rounded-md px-3 py-2 text-sm font-medium text-ink-700 hover:bg-ink-50 hover:text-brand-600 transition-colors">40 ft High Cube</Link>
+                      <Link href="/konteynerler?tip=45ft-hc" className="rounded-md px-3 py-2 text-sm font-medium text-ink-700 hover:bg-ink-50 hover:text-brand-600 transition-colors">45 ft High Cube</Link>
                       <div className="my-1 h-px bg-black/5" />
-                      <Link href="/konteynerler?tip=20ft-reefer" className="rounded-md px-3 py-2 text-sm font-medium text-ink-700 hover:bg-ink-50 hover:text-brand-600 transition-colors">Soğutuculu (Reefer)</Link>
-                      <Link href="/konteynerler?tip=20ft-flat-rack" className="rounded-md px-3 py-2 text-sm font-medium text-ink-700 hover:bg-ink-50 hover:text-brand-600 transition-colors">Özel Ekipmanlar</Link>
+                      <Link href="/konteynerler?tip=40ft-open-top" className="rounded-md px-3 py-2 text-sm font-medium text-ink-700 hover:bg-ink-50 hover:text-brand-600 transition-colors">Open Top (Üstü Açık)</Link>
+                      <Link href="/konteynerler?tip=40ft-flat-rack" className="rounded-md px-3 py-2 text-sm font-medium text-ink-700 hover:bg-ink-50 hover:text-brand-600 transition-colors">Flat Rack (Açık Platform)</Link>
+                      <Link href="/konteynerler?tip=40ft-reefer" className="rounded-md px-3 py-2 text-sm font-medium text-ink-700 hover:bg-ink-50 hover:text-brand-600 transition-colors">Soğutuculu (Reefer)</Link>
+                      <Link href="/konteynerler?tip=swapbody" className="rounded-md px-3 py-2 text-sm font-medium text-ink-700 hover:bg-ink-50 hover:text-brand-600 transition-colors">Swapbody (Treyler)</Link>
                       <div className="my-1 h-px bg-black/5" />
                       <Link href="/konteynerler" className="rounded-md px-3 py-2 text-sm font-bold text-brand-600 hover:bg-ink-50 transition-colors">Tüm Konteynerleri Gör &rarr;</Link>
                     </div>

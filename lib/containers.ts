@@ -2,12 +2,14 @@ export type ContainerType =
   | "20ft"
   | "40ft"
   | "40ft-hc"
+  | "45ft-hc"
   | "20ft-reefer"
   | "40ft-reefer"
   | "20ft-flat-rack"
   | "40ft-flat-rack"
   | "20ft-open-top"
-  | "40ft-open-top";
+  | "40ft-open-top"
+  | "swapbody";
 
 export type ContainerCondition = "yeni" | "ikinci-el";
 
@@ -17,7 +19,7 @@ export interface Container {
   type: ContainerType;
   typeLabel: string;
   condition: ContainerCondition;
-  sizeFt: 20 | 40;
+  sizeFt: 20 | 40 | 45 | null;
   priceTRY: number;
   city: string;
   shortDesc: string;
@@ -204,6 +206,99 @@ export const containers: Container[] = [
       Boya: "Mevcut, tazelenebilir",
     },
   },
+  {
+    slug: "40-ft-hc-konteyner",
+    title: "40 ft High Cube Konteyner",
+    type: "40ft-hc",
+    typeLabel: "40 ft High Cube",
+    condition: "yeni",
+    sizeFt: 40,
+    priceTRY: 265000,
+    city: "İstanbul",
+    shortDesc: "Ekstra yüksek hacimli, standarttan daha fazla iç hacim sunar.",
+    description: "Sıfır 40 ft High Cube konteyner. Standart konteynerlere göre yaklaşık 30 cm daha yüksek olup daha fazla hacim gerektiren yükler için idealdir.",
+    image: img("40ft-hc.svg"),
+    specs: {
+      "Dış Boyut": "11.98 × 2.35 × 2.69 m",
+      "İç Hacim": "76 m³",
+      "Boş Ağırlık": "3.970 kg",
+      "Yük Kapasitesi": "26.780 kg"
+    },
+    featured: true,
+  },
+  {
+    slug: "45-ft-hc-konteyner",
+    title: "45 ft High Cube Konteyner",
+    type: "45ft-hc",
+    typeLabel: "45 ft High Cube",
+    condition: "yeni",
+    sizeFt: 45,
+    priceTRY: 315000,
+    city: "İstanbul",
+    shortDesc: "Maksimum hacim arayanlar için en büyük ISO konteyner tipi.",
+    description: "Sıfır 45 ft High Cube konteyner. Kara ve deniz yolu taşımacılığında veya çok geniş depolama gereksinimlerinde maksimum kapasite sunar.",
+    image: img("40ft-hc.svg"),
+    specs: {
+      "Dış Boyut": "13.50 × 2.35 × 2.69 m",
+      "İç Hacim": "86 m³",
+      "Boş Ağırlık": "4.590 kg",
+      "Yük Kapasitesi": "27.900 kg"
+    }
+  },
+  {
+    slug: "20-ft-open-top-konteyner",
+    title: "20 ft Open Top Konteyner",
+    type: "20ft-open-top",
+    typeLabel: "20 ft Open Top",
+    condition: "yeni",
+    sizeFt: 20,
+    priceTRY: 220000,
+    city: "İzmir",
+    shortDesc: "Üstten yükleme gerektiren orta boyutlu yükler için.",
+    description: "Sıfır 20 ft Open Top konteyner. Tavanı açılabilen yapısıyla ağır makinelerin vinçle rahatça yüklenmesine olanak tanır.",
+    image: img("40ft-open-top.svg"),
+    specs: {
+      "Dış Boyut": "5.89 × 2.35 × 2.35 m",
+      "İç Hacim": "33 m³",
+      "Boş Ağırlık": "2.400 kg",
+      "Yük Kapasitesi": "21.600 kg"
+    }
+  },
+  {
+    slug: "40-ft-flat-rack-konteyner",
+    title: "40 ft Flat Rack Konteyner",
+    type: "40ft-flat-rack",
+    typeLabel: "40 ft Flat Rack",
+    condition: "yeni",
+    sizeFt: 40,
+    priceTRY: 340000,
+    city: "Mersin",
+    shortDesc: "Çok ağır ve devasa gabari dışı yükler için 40'lık açık platform.",
+    description: "Sıfır 40 ft flat rack konteyner. Standart dışı boyuttaki dev iş makineleri veya geniş çelik borular için yan duvarları olmayan özel tasarım.",
+    image: img("flat-rack.svg"),
+    specs: {
+      "Dış Boyut": "12.08 × 2.35 × 2.10 m",
+      "Boş Ağırlık": "5.480 kg",
+      "Uç Duvarlar": "Katlanabilir"
+    }
+  },
+  {
+    slug: "swapbody-konteyner",
+    title: "Swapbody",
+    type: "swapbody",
+    typeLabel: "Swapbody",
+    condition: "yeni",
+    sizeFt: null,
+    priceTRY: 390000,
+    city: "Kocaeli",
+    shortDesc: "Avrupa standartlarında, karayolu ve demiryolu uyumlu treyler kasası.",
+    description: "Sıfır Swapbody konteyner. Özellikle Avrupa intermodal taşımacılık sistemlerinde, kamyondan trene kolayca aktarılabilen yüksek hacimli kasa.",
+    image: img("40ft-hc.svg"),
+    specs: {
+      "Dış Boyut": "13.40 × 2.42 × 2.98 m",
+      "İç Hacim": "96.5 m³"
+    }
+  }
 ];
 
 export const typeOptions: { value: ContainerType | "all"; label: string }[] = [
@@ -211,18 +306,21 @@ export const typeOptions: { value: ContainerType | "all"; label: string }[] = [
   { value: "20ft", label: "20 ft Standart" },
   { value: "40ft", label: "40 ft Standart" },
   { value: "40ft-hc", label: "40 ft High Cube" },
+  { value: "45ft-hc", label: "45 ft High Cube" },
   { value: "20ft-reefer", label: "20 ft Reefer" },
   { value: "40ft-reefer", label: "40 ft Reefer" },
   { value: "20ft-flat-rack", label: "20 ft Flat Rack" },
   { value: "40ft-flat-rack", label: "40 ft Flat Rack" },
   { value: "20ft-open-top", label: "20 ft Open Top" },
   { value: "40ft-open-top", label: "40 ft Open Top" },
+  { value: "swapbody", label: "Swapbody" },
 ];
 
 export const sizeOptions = [
   { value: "20ft", label: "20 ft" },
   { value: "40ft", label: "40 ft" },
   { value: "40ft-hc", label: "40 ft High Cube" },
+  { value: "45ft-hc", label: "45 ft High Cube" },
 ];
 
 export const categoryOptions = [

@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { AnimatedStats } from "@/components/AnimatedStats";
 import { CtaBanner } from "@/components/CtaBanner";
 import { buildMetadata } from "@/lib/seo";
 import { site } from "@/lib/site-config";
@@ -23,7 +24,8 @@ export default function HakkimizdaPage() {
 
       <section className="container-x py-10 lg:py-14">
         <div className="grid gap-10 lg:grid-cols-2 lg:items-center">
-          <div className="prose prose-neutral max-w-none">
+          <div className="flex flex-col gap-6">
+            <div className="prose prose-neutral max-w-none">
             <p>
               <b>{site.legalName}</b>, Türkiye'nin önde gelen konteyner alım-satım ve modifikasyon firmasıdır. Liman çıkışı yeni konteynerlerden, bakımlı ikinci el ürünlere; soğutuculu reefer ünitelerinden açık platform flat rack konteynerlere kadar geniş bir stokla hizmet veriyoruz.
             </p>
@@ -39,6 +41,9 @@ export default function HakkimizdaPage() {
               <li>Türkiye geneli kapıya teslim sevkiyat</li>
             </ul>
           </div>
+
+          <AnimatedStats experienceYears={site.experienceYears} />
+        </div>
 
           <div className="relative aspect-[4/3] w-full overflow-hidden rounded-2xl ring-1 ring-black/10 lg:aspect-[3/4] xl:aspect-square">
             <Image 
