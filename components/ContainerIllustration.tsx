@@ -5,12 +5,12 @@ export function Svg20ft2elIcon(props: React.SVGProps<SVGSVGElement>) {
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" {...props}>
       
   <defs>
-    <linearGradient id="g" x1="0" x2="0" y1="0" y2="1"><stop offset="0" stopColor="#475569"/><stop offset="1" stopColor="#1e293b"/></linearGradient>
-    <linearGradient id="bg" x1="0" x2="0" y1="0" y2="1"><stop offset="0" stopColor="#f8fafc"/><stop offset="1" stopColor="#e2e8f0"/></linearGradient>
+    <linearGradient id="g_Svg20ft2elIcon" x1="0" x2="0" y1="0" y2="1"><stop offset="0" stopColor="#475569"/><stop offset="1" stopColor="#1e293b"/></linearGradient>
+    <linearGradient id="bg_Svg20ft2elIcon" x1="0" x2="0" y1="0" y2="1"><stop offset="0" stopColor="#f8fafc"/><stop offset="1" stopColor="#e2e8f0"/></linearGradient>
   </defs>
-  <rect width="800" height="600" fill="url(#bg)"/>
+  <rect width="800" height="600" fill="url(#bg_Svg20ft2elIcon)"/>
   <ellipse cx="400" cy="500" rx="320" ry="22" fill="#0b1220" opacity=".15"/>
-  <rect x="160" y="200" width="480" height="240" rx="12" fill="url(#g)"/>
+  <rect x="160" y="200" width="480" height="240" rx="12" fill="url(#g_Svg20ft2elIcon)"/>
   <g stroke="#fff" strokeOpacity=".22" strokeWidth="3">
     <line x1="190" y1="210" x2="190" y2="430"/><line x1="220" y1="210" x2="220" y2="430"/><line x1="250" y1="210" x2="250" y2="430"/>
     <line x1="280" y1="210" x2="280" y2="430"/><line x1="310" y1="210" x2="310" y2="430"/><line x1="340" y1="210" x2="340" y2="430"/>
@@ -32,12 +32,12 @@ export function Svg20ftReeferIcon(props: React.SVGProps<SVGSVGElement>) {
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" {...props}>
       
   <defs>
-    <linearGradient id="g" x1="0" x2="0" y1="0" y2="1"><stop offset="0" stopColor="#e2e8f0"/><stop offset="1" stopColor="#94a3b8"/></linearGradient>
-    <linearGradient id="bg" x1="0" x2="0" y1="0" y2="1"><stop offset="0" stopColor="#dbeafe"/><stop offset="1" stopColor="#bfdbfe"/></linearGradient>
+    <linearGradient id="g_Svg20ftReeferIcon" x1="0" x2="0" y1="0" y2="1"><stop offset="0" stopColor="#e2e8f0"/><stop offset="1" stopColor="#94a3b8"/></linearGradient>
+    <linearGradient id="bg_Svg20ftReeferIcon" x1="0" x2="0" y1="0" y2="1"><stop offset="0" stopColor="#dbeafe"/><stop offset="1" stopColor="#bfdbfe"/></linearGradient>
   </defs>
-  <rect width="800" height="600" fill="url(#bg)"/>
+  <rect width="800" height="600" fill="url(#bg_Svg20ftReeferIcon)"/>
   <ellipse cx="400" cy="500" rx="320" ry="22" fill="#0b1220" opacity=".15"/>
-  <rect x="200" y="200" width="440" height="240" rx="12" fill="url(#g)"/>
+  <rect x="200" y="200" width="440" height="240" rx="12" fill="url(#g_Svg20ftReeferIcon)"/>
   <g stroke="#475569" strokeOpacity=".25" strokeWidth="2">
     <line x1="230" y1="210" x2="230" y2="430"/><line x1="260" y1="210" x2="260" y2="430"/><line x1="290" y1="210" x2="290" y2="430"/>
     <line x1="320" y1="210" x2="320" y2="430"/><line x1="350" y1="210" x2="350" y2="430"/><line x1="380" y1="210" x2="380" y2="430"/>
@@ -65,12 +65,12 @@ export function Svg20ftStandartIcon(props: React.SVGProps<SVGSVGElement>) {
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" {...props}>
       
   <defs>
-    <linearGradient id="g" x1="0" x2="0" y1="0" y2="1"><stop offset="0" stopColor="#ea580c"/><stop offset="1" stopColor="#9a3412"/></linearGradient>
-    <linearGradient id="bg" x1="0" x2="0" y1="0" y2="1"><stop offset="0" stopColor="#f8fafc"/><stop offset="1" stopColor="#e2e8f0"/></linearGradient>
+    <linearGradient id="g_Svg20ftStandartIcon" x1="0" x2="0" y1="0" y2="1"><stop offset="0" stopColor="#ea580c"/><stop offset="1" stopColor="#9a3412"/></linearGradient>
+    <linearGradient id="bg_Svg20ftStandartIcon" x1="0" x2="0" y1="0" y2="1"><stop offset="0" stopColor="#f8fafc"/><stop offset="1" stopColor="#e2e8f0"/></linearGradient>
   </defs>
-  <rect width="800" height="600" fill="url(#bg)"/>
+  <rect width="800" height="600" fill="url(#bg_Svg20ftStandartIcon)"/>
   <ellipse cx="400" cy="500" rx="320" ry="22" fill="#0b1220" opacity=".15"/>
-  <rect x="160" y="200" width="480" height="240" rx="12" fill="url(#g)"/>
+  <rect x="160" y="200" width="480" height="240" rx="12" fill="url(#g_Svg20ftStandartIcon)"/>
   <g stroke="#fff" strokeOpacity=".22" strokeWidth="3">
     <line x1="190" y1="210" x2="190" y2="430"/><line x1="220" y1="210" x2="220" y2="430"/><line x1="250" y1="210" x2="250" y2="430"/>
     <line x1="280" y1="210" x2="280" y2="430"/><line x1="310" y1="210" x2="310" y2="430"/><line x1="340" y1="210" x2="340" y2="430"/>
@@ -92,12 +92,12 @@ export function Svg40ft2elIcon(props: React.SVGProps<SVGSVGElement>) {
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" {...props}>
       
   <defs>
-    <linearGradient id="g" x1="0" x2="0" y1="0" y2="1"><stop offset="0" stopColor="#64748b"/><stop offset="1" stopColor="#334155"/></linearGradient>
-    <linearGradient id="bg" x1="0" x2="0" y1="0" y2="1"><stop offset="0" stopColor="#f8fafc"/><stop offset="1" stopColor="#e2e8f0"/></linearGradient>
+    <linearGradient id="g_Svg40ft2elIcon" x1="0" x2="0" y1="0" y2="1"><stop offset="0" stopColor="#64748b"/><stop offset="1" stopColor="#334155"/></linearGradient>
+    <linearGradient id="bg_Svg40ft2elIcon" x1="0" x2="0" y1="0" y2="1"><stop offset="0" stopColor="#f8fafc"/><stop offset="1" stopColor="#e2e8f0"/></linearGradient>
   </defs>
-  <rect width="800" height="600" fill="url(#bg)"/>
+  <rect width="800" height="600" fill="url(#bg_Svg40ft2elIcon)"/>
   <ellipse cx="400" cy="510" rx="360" ry="22" fill="#0b1220" opacity=".15"/>
-  <rect x="80" y="210" width="640" height="240" rx="12" fill="url(#g)"/>
+  <rect x="80" y="210" width="640" height="240" rx="12" fill="url(#g_Svg40ft2elIcon)"/>
   <g stroke="#fff" strokeOpacity=".2" strokeWidth="3">
     <line x1="110" y1="220" x2="110" y2="440"/><line x1="140" y1="220" x2="140" y2="440"/><line x1="170" y1="220" x2="170" y2="440"/>
     <line x1="200" y1="220" x2="200" y2="440"/><line x1="230" y1="220" x2="230" y2="440"/><line x1="260" y1="220" x2="260" y2="440"/>
@@ -122,12 +122,12 @@ export function Svg40ftHcIcon(props: React.SVGProps<SVGSVGElement>) {
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" {...props}>
       
   <defs>
-    <linearGradient id="g" x1="0" x2="0" y1="0" y2="1"><stop offset="0" stopColor="#16a34a"/><stop offset="1" stopColor="#14532d"/></linearGradient>
-    <linearGradient id="bg" x1="0" x2="0" y1="0" y2="1"><stop offset="0" stopColor="#f8fafc"/><stop offset="1" stopColor="#e2e8f0"/></linearGradient>
+    <linearGradient id="g_Svg40ftHcIcon" x1="0" x2="0" y1="0" y2="1"><stop offset="0" stopColor="#16a34a"/><stop offset="1" stopColor="#14532d"/></linearGradient>
+    <linearGradient id="bg_Svg40ftHcIcon" x1="0" x2="0" y1="0" y2="1"><stop offset="0" stopColor="#f8fafc"/><stop offset="1" stopColor="#e2e8f0"/></linearGradient>
   </defs>
-  <rect width="800" height="600" fill="url(#bg)"/>
+  <rect width="800" height="600" fill="url(#bg_Svg40ftHcIcon)"/>
   <ellipse cx="400" cy="520" rx="360" ry="22" fill="#0b1220" opacity=".15"/>
-  <rect x="80" y="170" width="640" height="290" rx="12" fill="url(#g)"/>
+  <rect x="80" y="170" width="640" height="290" rx="12" fill="url(#g_Svg40ftHcIcon)"/>
   <g stroke="#fff" strokeOpacity=".22" strokeWidth="3">
     <line x1="110" y1="180" x2="110" y2="450"/><line x1="140" y1="180" x2="140" y2="450"/><line x1="170" y1="180" x2="170" y2="450"/>
     <line x1="200" y1="180" x2="200" y2="450"/><line x1="230" y1="180" x2="230" y2="450"/><line x1="260" y1="180" x2="260" y2="450"/>
@@ -150,13 +150,13 @@ export function Svg40ftOpenTopIcon(props: React.SVGProps<SVGSVGElement>) {
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" {...props}>
       
   <defs>
-    <linearGradient id="g" x1="0" x2="0" y1="0" y2="1"><stop offset="0" stopColor="#0284c7"/><stop offset="1" stopColor="#0369a1"/></linearGradient>
-    <linearGradient id="bg" x1="0" x2="0" y1="0" y2="1"><stop offset="0" stopColor="#f8fafc"/><stop offset="1" stopColor="#e2e8f0"/></linearGradient>
-    <linearGradient id="tarp" x1="0" x2="0" y1="0" y2="1"><stop offset="0" stopColor="#cbd5e1"/><stop offset="1" stopColor="#94a3b8"/></linearGradient>
+    <linearGradient id="g_Svg40ftOpenTopIcon" x1="0" x2="0" y1="0" y2="1"><stop offset="0" stopColor="#0284c7"/><stop offset="1" stopColor="#0369a1"/></linearGradient>
+    <linearGradient id="bg_Svg40ftOpenTopIcon" x1="0" x2="0" y1="0" y2="1"><stop offset="0" stopColor="#f8fafc"/><stop offset="1" stopColor="#e2e8f0"/></linearGradient>
+    <linearGradient id="tarp_Svg40ftOpenTopIcon" x1="0" x2="0" y1="0" y2="1"><stop offset="0" stopColor="#cbd5e1"/><stop offset="1" stopColor="#94a3b8"/></linearGradient>
   </defs>
-  <rect width="800" height="600" fill="url(#bg)"/>
+  <rect width="800" height="600" fill="url(#bg_Svg40ftOpenTopIcon)"/>
   <ellipse cx="400" cy="520" rx="360" ry="22" fill="#0b1220" opacity=".15"/>
-  <rect x="80" y="190" width="640" height="270" rx="12" fill="url(#g)"/>
+  <rect x="80" y="190" width="640" height="270" rx="12" fill="url(#g_Svg40ftOpenTopIcon)"/>
   
   <g stroke="#fff" strokeOpacity=".22" strokeWidth="3">
     <line x1="110" y1="190" x2="110" y2="450"/><line x1="140" y1="190" x2="140" y2="450"/><line x1="170" y1="190" x2="170" y2="450"/>
@@ -169,8 +169,8 @@ export function Svg40ftOpenTopIcon(props: React.SVGProps<SVGSVGElement>) {
   </g>
   
   {/**/}
-  <path d="M 75 205 Q 400 170 725 205 L 715 215 L 85 215 Z" fill="url(#tarp)" />
-  <rect x="75" y="200" width="650" height="15" rx="4" fill="url(#tarp)"/>
+  <path d="M 75 205 Q 400 170 725 205 L 715 215 L 85 215 Z" fill="url(#tarp_Svg40ftOpenTopIcon)" />
+  <rect x="75" y="200" width="650" height="15" rx="4" fill="url(#tarp_Svg40ftOpenTopIcon)"/>
   {/**/}
   <g stroke="#64748b" strokeWidth="2">
     <line x1="120" y1="210" x2="120" y2="225"/><line x1="180" y1="210" x2="180" y2="225"/>
@@ -193,12 +193,12 @@ export function Svg40ftReeferIcon(props: React.SVGProps<SVGSVGElement>) {
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" {...props}>
       
   <defs>
-    <linearGradient id="g" x1="0" x2="0" y1="0" y2="1"><stop offset="0" stopColor="#e2e8f0"/><stop offset="1" stopColor="#94a3b8"/></linearGradient>
-    <linearGradient id="bg" x1="0" x2="0" y1="0" y2="1"><stop offset="0" stopColor="#dbeafe"/><stop offset="1" stopColor="#bfdbfe"/></linearGradient>
+    <linearGradient id="g_Svg40ftReeferIcon" x1="0" x2="0" y1="0" y2="1"><stop offset="0" stopColor="#e2e8f0"/><stop offset="1" stopColor="#94a3b8"/></linearGradient>
+    <linearGradient id="bg_Svg40ftReeferIcon" x1="0" x2="0" y1="0" y2="1"><stop offset="0" stopColor="#dbeafe"/><stop offset="1" stopColor="#bfdbfe"/></linearGradient>
   </defs>
-  <rect width="800" height="600" fill="url(#bg)"/>
+  <rect width="800" height="600" fill="url(#bg_Svg40ftReeferIcon)"/>
   <ellipse cx="400" cy="510" rx="360" ry="22" fill="#0b1220" opacity=".15"/>
-  <rect x="150" y="200" width="570" height="240" rx="12" fill="url(#g)"/>
+  <rect x="150" y="200" width="570" height="240" rx="12" fill="url(#g_Svg40ftReeferIcon)"/>
   <g stroke="#475569" strokeOpacity=".25" strokeWidth="2">
     <line x1="180" y1="210" x2="180" y2="430"/><line x1="210" y1="210" x2="210" y2="430"/><line x1="240" y1="210" x2="240" y2="430"/>
     <line x1="270" y1="210" x2="270" y2="430"/><line x1="300" y1="210" x2="300" y2="430"/><line x1="330" y1="210" x2="330" y2="430"/>
@@ -227,12 +227,12 @@ export function Svg40ftStandartIcon(props: React.SVGProps<SVGSVGElement>) {
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" {...props}>
       
   <defs>
-    <linearGradient id="g" x1="0" x2="0" y1="0" y2="1"><stop offset="0" stopColor="#0284c7"/><stop offset="1" stopColor="#0c4a6e"/></linearGradient>
-    <linearGradient id="bg" x1="0" x2="0" y1="0" y2="1"><stop offset="0" stopColor="#f8fafc"/><stop offset="1" stopColor="#e2e8f0"/></linearGradient>
+    <linearGradient id="g_Svg40ftStandartIcon" x1="0" x2="0" y1="0" y2="1"><stop offset="0" stopColor="#0284c7"/><stop offset="1" stopColor="#0c4a6e"/></linearGradient>
+    <linearGradient id="bg_Svg40ftStandartIcon" x1="0" x2="0" y1="0" y2="1"><stop offset="0" stopColor="#f8fafc"/><stop offset="1" stopColor="#e2e8f0"/></linearGradient>
   </defs>
-  <rect width="800" height="600" fill="url(#bg)"/>
+  <rect width="800" height="600" fill="url(#bg_Svg40ftStandartIcon)"/>
   <ellipse cx="400" cy="510" rx="360" ry="22" fill="#0b1220" opacity=".15"/>
-  <rect x="80" y="210" width="640" height="240" rx="12" fill="url(#g)"/>
+  <rect x="80" y="210" width="640" height="240" rx="12" fill="url(#g_Svg40ftStandartIcon)"/>
   <g stroke="#fff" strokeOpacity=".22" strokeWidth="3">
     <line x1="110" y1="220" x2="110" y2="440"/><line x1="140" y1="220" x2="140" y2="440"/><line x1="170" y1="220" x2="170" y2="440"/>
     <line x1="200" y1="220" x2="200" y2="440"/><line x1="230" y1="220" x2="230" y2="440"/><line x1="260" y1="220" x2="260" y2="440"/>
@@ -256,15 +256,15 @@ export function FlatRackIcon(props: React.SVGProps<SVGSVGElement>) {
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" {...props}>
       
   <defs>
-    <linearGradient id="g" x1="0" x2="0" y1="0" y2="1"><stop offset="0" stopColor="#facc15"/><stop offset="1" stopColor="#a16207"/></linearGradient>
-    <linearGradient id="end" x1="0" x2="0" y1="0" y2="1"><stop offset="0" stopColor="#eab308"/><stop offset="1" stopColor="#854d0e"/></linearGradient>
-    <linearGradient id="bg" x1="0" x2="0" y1="0" y2="1"><stop offset="0" stopColor="#f8fafc"/><stop offset="1" stopColor="#e2e8f0"/></linearGradient>
+    <linearGradient id="g_FlatRackIcon" x1="0" x2="0" y1="0" y2="1"><stop offset="0" stopColor="#facc15"/><stop offset="1" stopColor="#a16207"/></linearGradient>
+    <linearGradient id="end_FlatRackIcon" x1="0" x2="0" y1="0" y2="1"><stop offset="0" stopColor="#eab308"/><stop offset="1" stopColor="#854d0e"/></linearGradient>
+    <linearGradient id="bg_FlatRackIcon" x1="0" x2="0" y1="0" y2="1"><stop offset="0" stopColor="#f8fafc"/><stop offset="1" stopColor="#e2e8f0"/></linearGradient>
   </defs>
-  <rect width="800" height="600" fill="url(#bg)"/>
+  <rect width="800" height="600" fill="url(#bg_FlatRackIcon)"/>
   <ellipse cx="400" cy="500" rx="320" ry="22" fill="#0b1220" opacity=".18"/>
 
   {/**/}
-  <rect x="120" y="380" width="560" height="70" rx="6" fill="url(#g)" stroke="#713f12" strokeWidth="2"/>
+  <rect x="120" y="380" width="560" height="70" rx="6" fill="url(#g_FlatRackIcon)" stroke="#713f12" strokeWidth="2"/>
   <g stroke="#713f12" strokeOpacity=".4" strokeWidth="2">
     <line x1="160" y1="380" x2="160" y2="450"/><line x1="200" y1="380" x2="200" y2="450"/>
     <line x1="240" y1="380" x2="240" y2="450"/><line x1="280" y1="380" x2="280" y2="450"/>
@@ -276,10 +276,10 @@ export function FlatRackIcon(props: React.SVGProps<SVGSVGElement>) {
   </g>
 
   {/**/}
-  <rect x="120" y="200" width="40" height="180" rx="4" fill="url(#end)" stroke="#713f12" strokeWidth="2"/>
+  <rect x="120" y="200" width="40" height="180" rx="4" fill="url(#end_FlatRackIcon)" stroke="#713f12" strokeWidth="2"/>
   <line x1="140" y1="210" x2="140" y2="375" stroke="#fff" strokeOpacity=".25" strokeWidth="3"/>
   {/**/}
-  <rect x="640" y="200" width="40" height="180" rx="4" fill="url(#end)" stroke="#713f12" strokeWidth="2"/>
+  <rect x="640" y="200" width="40" height="180" rx="4" fill="url(#end_FlatRackIcon)" stroke="#713f12" strokeWidth="2"/>
   <line x1="660" y1="210" x2="660" y2="375" stroke="#fff" strokeOpacity=".25" strokeWidth="3"/>
 
   {/**/}
