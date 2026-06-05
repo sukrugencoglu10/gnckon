@@ -27,19 +27,24 @@ export default function HakkimizdaPage() {
           <div className="flex flex-col gap-6">
             <div className="prose prose-neutral max-w-none">
             <p>
-              <b>{site.legalName}</b>, Türkiye'nin önde gelen konteyner alım-satım ve modifikasyon firmasıdır. Liman çıkışı yeni konteynerlerden, bakımlı ikinci el ürünlere; soğutuculu reefer ünitelerinden açık platform flat rack konteynerlere kadar geniş bir stokla hizmet veriyoruz.
+              <b>{site.legalName}</b>, Türkiye genelinde global standartlara uygun konteyner tedariki, alım-satımı ve mühendislik odaklı modifikasyon süreçlerinde sektörün öncü ve güvenilir markalarından biridir. Kuruluşumuzdan bu yana, küresel ticaretin ve lojistik ekosisteminin en kritik yapı taşı olan konteyner ihtiyaçlarına; yenilikçi, hızlı ve sürdürülebilir çözümler üretiyoruz.
             </p>
             <p>
-              Misyonumuz, müşterilerimize <b>hızlı yanıt</b>, <b>şeffaf fiyat</b> ve <b>garantili teslimat</b> sağlamaktır. Tüm satışlarımız faturalı, kontrol edilmiş ve sertifikalıdır.
+              Geniş tedarik ağımız ve güçlü stok altyapımız sayesinde; liman çıkışlı sıfır (one-way) konteynerlerden, uluslararası taşımacılık standartlarına uygun (CSC sertifikalı) bakımlı ikinci el ürünlere; hassas iklimlendirme gerektiren soğutuculu (reefer) ünitelerden, ağır ve gabari dışı lojistik operasyonlarının vazgeçilmezi olan flat rack ve open top çözümlerine kadar çok geniş bir ürün yelpazesiyle hizmet sunuyoruz.
             </p>
-            <h2>Hizmet Alanlarımız</h2>
-            <ul>
-              <li>Yeni ve 2. el konteyner satışı (20 ft, 40 ft, High Cube)</li>
-              <li>Soğutuculu (Reefer) konteyner satış ve kiralama</li>
-              <li>Flat rack & open top — ağır ve gabari dışı yük taşımacılığı</li>
-              <li>Müşterilerin elindeki konteynerlerin alımı</li>
-              <li>Türkiye geneli kapıya teslim sevkiyat</li>
-            </ul>
+            
+            <h2>Değerlerimiz ve Taahhüdümüz</h2>
+            <p>
+              Sektördeki varlığımızı ve müşteri sadakatimizi üç temel ilke üzerine inşa ettik: <b>Şeffaflık</b>, <b>Operasyonel Hız</b> ve <b>Koşulsuz Güven</b>.
+            </p>
+            <p>
+              GNCKON çatısı altında gerçekleştirdiğimiz tüm ticari süreçler tam şeffaflık ilkesiyle yürütülür; tüm ürünlerimiz kalite kontrol testlerinden geçirilerek, sertifikalı ve resmi faturalı olarak teslim edilir. Amacımız, müşterilerimizin tedarik süreçlerindeki riskleri sıfıra indirerek operasyonel verimliliklerine katkıda bulunmaktır.
+            </p>
+
+            <h2>Neden {site.name}?</h2>
+            <p>
+              <b>Uluslararası Standartlar, Sertifikalı Güvence:</b> Ticari operasyonlarınızın aksamaması için tedarik ettiğimiz her konteyner, uluslararası taşımacılık kurallarına ve sızdırmazlık standartlarına tam uyum garantisi taşır. Sektördeki tecrübemiz ve güçlü finansal yapımızla, projelerinizin en güvenilir halkası olmak için çalışıyoruz.
+            </p>
           </div>
 
           <AnimatedStats experienceYears={site.experienceYears} />
