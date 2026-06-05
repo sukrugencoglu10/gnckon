@@ -1,6 +1,9 @@
 import { Suspense } from "react";
+import Link from "next/link";
+import { ContainerIllustration } from "@/components/ContainerIllustration";
 import { ContainerCard } from "@/components/ContainerCard";
 import { ContainerFilters } from "@/components/ContainerFilters";
+import { ContainerGridSkeleton } from "@/components/ContainerCardSkeleton";
 import { CtaBanner } from "@/components/CtaBanner";
 import { containers, type ContainerType } from "@/lib/containers";
 import { buildMetadata } from "@/lib/seo";
@@ -18,15 +21,52 @@ interface PageProps {
   searchParams: { tip?: string; durum?: string };
 }
 
-export default function ListPage({ searchParams }: PageProps) {
+async function FilteredContainerList({ searchParams }: PageProps) {
   const tip = searchParams.tip as ContainerType | undefined;
   const durum = searchParams.durum;
+
+  // UX Gösterimi için API gecikmesi simülasyonu (Gerçek DB'ye geçildiğinde kaldırılabilir)
+  await new Promise((resolve) => setTimeout(resolve, 400));
 
   const filtered = containers.filter((c) => {
     if (tip && tip !== ("all" as ContainerType) && c.type !== tip) return false;
     if (durum && durum !== "all" && c.condition !== durum) return false;
     return true;
   });
+
+  if (filtered.length === 0) {
+    return (
+      <div className="card mt-6 flex flex-col items-center justify-center p-12 text-center ring-1 ring-black/5 bg-white shadow-sm">
+        <div className="relative mb-6 h-32 w-48 opacity-40 grayscale mix-blend-multiply">
+          <ContainerIllustration image="/images/containers/20ft-standart.svg" className="h-full w-full object-contain" />
+        </div>
+        <h3 className="text-xl font-bold text-ink-900">Sonuç Bulunamadı</h3>
+        <p className="mt-2 max-w-md text-base text-ink-500">
+          Aradığınız kriterde konteyner bulunamadı. Lütfen filtreleri temizleyin veya özel üretim için bizimle iletişime geçin.
+        </p>
+        <div className="mt-8 flex flex-wrap justify-center gap-3">
+          <Link href="/konteynerler" className="btn-primary">
+            Filtreleri Sıfırla
+          </Link>
+          <Link href="/iletisim" className="btn-outline">
+            İletişime Geç
+          </Link>
+        </div>
+      </div>
+    );
+  }
+
+  return (
+    <div className="mt-6 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+      {filtered.map((c) => (
+        <ContainerCard key={c.slug} c={c} />
+      ))}
+    </div>
+  );
+}
+
+export default function ListPage({ searchParams }: PageProps) {
+  const suspenseKey = JSON.stringify(searchParams);
 
   const breadcrumb = {
     "@context": "https://schema.org",
@@ -43,7 +83,7 @@ export default function ListPage({ searchParams }: PageProps) {
         <div className="container-x py-10">
           <h1 className="text-3xl font-extrabold tracking-tight sm:text-4xl">Satılık Konteynerler</h1>
           <p className="mt-2 text-ink-400">
-            {filtered.length} konteyner listeleniyor. Hızlı filtre ile arama yapın veya WhatsApp'tan ulaşın.
+            Hızlı filtre ile arama yapın veya güncel stoklar için WhatsApp'tan ulaşın.
           </p>
         </div>
       </section>
@@ -53,17 +93,9 @@ export default function ListPage({ searchParams }: PageProps) {
           <ContainerFilters />
         </Suspense>
 
-        {filtered.length === 0 ? (
-          <div className="card mt-6 p-8 text-center">
-            <p className="text-ink-600">Bu kriterlerle eşleşen konteyner bulunamadı.</p>
-          </div>
-        ) : (
-          <div className="mt-6 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
-            {filtered.map((c) => (
-              <ContainerCard key={c.slug} c={c} />
-            ))}
-          </div>
-        )}
+        <Suspense key={suspenseKey} fallback={<ContainerGridSkeleton />}>
+          <FilteredContainerList searchParams={searchParams} />
+        </Suspense>
       </section>
 
       <CtaBanner />

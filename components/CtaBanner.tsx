@@ -32,7 +32,7 @@ export function CtaBanner() {
               href={waLink("Merhaba, satılık konteyner için fiyat almak istiyorum.")}
               target="_blank"
               rel="noopener noreferrer"
-              className="group relative inline-flex flex-1 items-center justify-center gap-2.5 overflow-hidden whitespace-nowrap rounded-xl bg-wa px-6 py-3.5 text-base font-bold text-white shadow-lg shadow-wa/30 ring-1 ring-white/10 transition hover:-translate-y-0.5 hover:bg-wa-dark hover:shadow-xl hover:shadow-wa/40"
+              className="group relative inline-flex flex-1 items-center justify-center gap-2.5 overflow-hidden whitespace-nowrap rounded-xl bg-[#128C7E] px-6 py-3.5 text-base font-bold text-white shadow-lg shadow-wa/30 ring-1 ring-white/10 transition-transform hover:-translate-y-0.5 active:scale-[0.98] hover:scale-[1.02] hover:bg-[#0f7a6e] hover:shadow-xl hover:shadow-wa/40"
             >
               <span aria-hidden className="grid h-7 w-7 place-items-center rounded-full bg-white/20">
                 <svg viewBox="0 0 24 24" className="h-4 w-4 fill-current" aria-hidden>
@@ -47,7 +47,7 @@ export function CtaBanner() {
             </a>
             <Link
               href="/teklif-al"
-              className="group inline-flex flex-1 items-center justify-center gap-2 whitespace-nowrap rounded-xl bg-brand-600 px-5 py-3.5 text-base font-bold text-white shadow-lg shadow-brand-600/25 transition hover:-translate-y-0.5 hover:bg-brand-700 hover:shadow-xl hover:shadow-brand-600/35"
+              className="group inline-flex flex-1 items-center justify-center gap-2 whitespace-nowrap rounded-xl bg-brand-700 px-5 py-3.5 text-base font-bold text-white shadow-lg shadow-brand-600/25 transition-transform hover:-translate-y-0.5 active:scale-[0.98] hover:scale-[1.02] hover:bg-brand-800 hover:shadow-xl hover:shadow-brand-600/35"
             >
               Teklif Formu
               <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-0.5" />

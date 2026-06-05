@@ -11,7 +11,7 @@ export function MobileBottomBar() {
     >
       <a
         href={telLink()}
-        className="flex h-full flex-col items-center justify-center gap-0.5 text-xs font-semibold text-ink-800 active:bg-ink-700/5"
+        className="flex h-full flex-col items-center justify-center gap-0.5 text-xs font-semibold text-ink-900 transition-transform hover:scale-[1.02] active:scale-[0.98] active:bg-ink-700/5"
       >
         <Phone className="h-5 w-5" />
         Ara
@@ -20,14 +20,14 @@ export function MobileBottomBar() {
         href={waLink("Merhaba, konteyner almak istiyorum.")}
         target="_blank"
         rel="noopener noreferrer"
-        className="flex h-full flex-col items-center justify-center gap-0.5 bg-wa text-xs font-bold text-white"
+        className="flex h-full flex-col items-center justify-center gap-0.5 bg-[#128C7E] text-xs font-bold text-white transition-transform hover:scale-[1.02] active:scale-[0.98]"
       >
         <MessageCircle className="h-5 w-5" />
         WhatsApp
       </a>
       <Link
         href="/teklif-al"
-        className="flex h-full flex-col items-center justify-center gap-0.5 bg-brand-600 text-xs font-bold text-white"
+        className="flex h-full flex-col items-center justify-center gap-0.5 bg-brand-700 text-xs font-bold text-white transition-transform hover:scale-[1.02] active:scale-[0.98]"
       >
         <Send className="h-5 w-5" />
         Teklif Al
