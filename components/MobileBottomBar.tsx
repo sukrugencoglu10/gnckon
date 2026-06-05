@@ -20,7 +20,7 @@ export function MobileBottomBar() {
         href={waLink("Merhaba, konteyner almak istiyorum.")}
         target="_blank"
         rel="noopener noreferrer"
-        className="flex h-full flex-col items-center justify-center gap-0.5 bg-[#128C7E] text-xs font-bold text-white transition-transform hover:scale-[1.02] active:scale-[0.98]"
+        className="flex h-full flex-col items-center justify-center gap-0.5 bg-wa text-xs font-bold text-white transition-colors hover:bg-wa-dark active:bg-wa-dark"
       >
         <MessageCircle className="h-5 w-5" />
         WhatsApp
