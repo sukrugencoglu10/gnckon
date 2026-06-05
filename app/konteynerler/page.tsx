@@ -79,10 +79,10 @@ export default function ListPage({ searchParams }: PageProps) {
 
   return (
     <>
-      <section className="border-b border-black/5 bg-ink-900 text-white">
+      <section className="border-b border-black/5 bg-slate-50">
         <div className="container-x py-10">
-          <h1 className="text-3xl font-extrabold tracking-tight sm:text-4xl">Satılık Konteynerler</h1>
-          <p className="mt-2 text-ink-400">
+          <h1 className="text-3xl font-extrabold tracking-tight text-ink-900 sm:text-4xl">Satılık Konteynerler</h1>
+          <p className="mt-2 text-ink-600">
             Hızlı filtre ile arama yapın veya güncel stoklar için WhatsApp'tan ulaşın.
           </p>
         </div>

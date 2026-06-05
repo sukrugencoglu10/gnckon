@@ -12,10 +12,10 @@ export const metadata = buildMetadata({
 export default function TeklifAlPage() {
   return (
     <>
-      <section className="border-b border-black/5 bg-ink-900 text-white">
+      <section className="border-b border-black/5 bg-slate-50">
         <div className="container-x py-10">
-          <h1 className="text-3xl font-extrabold tracking-tight sm:text-4xl">Teklif Al</h1>
-          <p className="mt-2 max-w-xl text-ink-400">
+          <h1 className="text-3xl font-extrabold tracking-tight text-ink-900 sm:text-4xl">Teklif Al</h1>
+          <p className="mt-2 max-w-xl text-ink-600">
             İhtiyaç duyduğunuz konteyneri seçin, telefon ve şehir bilgisini bırakın — biz size geri dönelim.
           </p>
         </div>

@@ -13,11 +13,11 @@ export const metadata = buildMetadata({
 export default function HakkimizdaPage() {
   return (
     <>
-      <section className="border-b border-black/5 bg-ink-900 text-white">
+      <section className="border-b border-black/5 bg-slate-50">
         <div className="container-x py-10">
-          <h1 className="text-3xl font-extrabold tracking-tight sm:text-4xl">Hakkımızda</h1>
-          <p className="mt-2 max-w-2xl text-ink-400">
-            {site.experienceYears}+ yıllık tecrübemizle satılık konteyner pazarında güvenilir adres.
+          <h1 className="text-3xl font-extrabold tracking-tight text-ink-900 sm:text-4xl">Hakkımızda</h1>
+          <p className="mt-2 text-ink-600">
+            {site.name} olarak sektördeki tecrübemiz ve geniş stok ağımızla hızlı ve şeffaf hizmet sunuyoruz.
           </p>
         </div>
       </section>
